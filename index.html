@@ -1,59 +1,97 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TechNova</title>
+
+  <!-- Stylové soubory -->
   <link rel="stylesheet" href="src/general.css" />
   <link rel="stylesheet" href="src/header.css" />
   <link rel="stylesheet" href="src/main.css" />
   <link rel="stylesheet" href="src/footer.css" />
 </head>
 
-<body>
-  <header>
+<header>
+
+  <div class="off-screen-menu">
+    <ul>
+      <li><a href="/index.html">Domů</a></li>
+      <li><a href="./sluzby/sluzby.html">Služby</a></li>
+      <li><a href="./onas/o-nas.html">O nás</a></li>
+      <li><a href="./galerie/galerie.html">Galerie</a></li>
+      <li><a href="./kontakt/kontakt.html">Kontakt</a></li>
+    </ul>
+  </div>
+
+  <nav>
     <div class="logo">TechNova</div>
-    <nav class="nav">
-      <a href="/index.html">Domů</a>
-      <a href="./sluzby/sluzby.html">Služby</a>
-      <a href="./onas/o-nas.html">O nás</a>
-      <a href="./galerie/galerie.html">Galerie</a>
-      <a href="./kontakt/kontakt.html">Kontakt</a>
-    </nav>
-  </header>
+
+
+    <div class="ham-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+</header>
+
+  
+
   <main>
-
     <section class="hero">
-      <h1>Vítejte v TechNova</h1>
-      <p>
-        Jsme moderní technologická firma zaměřená na vývoj webových aplikací, správu podnikových sítí a komplexní IT poradenství.
-        Našim cílem je pomoci firmám zefektivnit jejich digitální procesy, zvýšit bezpečnost dat a podpořit růst prostřednictvím chytrých řešení.
-      </p>
-      <p>
-        Ať už jste začínající startup nebo zavedená společnost, u nás najdete spolehlivého partnera, který rozumí technologiím i vašim potřebám.
-        S námi máte jistotu, že vaše IT funguje – rychle, bezpečně a efektivně.
-      </p>
-      <a href="#kontakt" class="btn">Kontaktujte nás</a>
+      <div class="hero-inner">
+        <h1>Moderní IT řešení na míru</h1>
+        <p>Pomáháme firmám růst díky technologiím – efektivně, bezpečně a chytře.</p>
+        <a href="./kontakt/kontakt.html" class="btn">Kontaktujte nás</a>
+      </div>
     </section>
-    
 
-
-    <section class="benefits">
-      <h2>Proč právě my?</h2>
-      <div class="benefit-list">
-        <div class="benefit">
-          <h3>Rychlost</h3>
-          <p>Rychlé dodání bez zbytečných odkladů.</p>
+    <!-- Sekce: Služby -->
+    <section class="services">
+      <h2>Naše služby</h2>
+      <div class="services-grid">
+        <div class="service">
+          <h3>Webové aplikace</h3>
+          <p>Vývoj moderních, bezpečných a výkonných webových řešení.</p>
         </div>
-        <div class="benefit">
-          <h3>Kvalita</h3>
-          <p>Moderní technologie a precizní vývoj.</p>
+        <div class="service">
+          <h3>Správa sítí</h3>
+          <p>Kompletní návrh, realizace a údržba podnikových sítí.</p>
         </div>
-        <div class="benefit">
-          <h3>Podpora</h3>
-          <p>Jsme tu pro vás i po spuštění.</p>
+        <div class="service">
+          <h3>Cloud & Hosting</h3>
+          <p>Optimalizace cloudového prostředí pro vaše podnikání.</p>
+        </div>
+        <div class="service">
+          <h3>IT Poradenství</h3>
+          <p>Strategické konzultace a podpora pro váš technologický rozvoj.</p>
         </div>
       </div>
+    </section>
+
+    <!-- Sekce: O nás -->
+    <section class="about">
+      <div class="about-inner">
+        <div class="about-text">
+          <h2>O nás</h2>
+          <p>
+            Jsme tým odborníků s vášní pro technologie.  
+            Stavíme spolehlivá a inovativní IT řešení, která pomáhají firmám růst a být konkurenceschopné.
+          </p>
+          <p>
+            Zakládáme si na kvalitě, přístupu a dlouhodobých vztazích se zákazníky.
+          </p>
+          <a href="./onas/o-nas.html" class="o-nas-btn">O nás</a>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="contact-cta">
+      <h2>Připraveni na spolupráci?</h2>
+      <p>Ozvěte se nám a společně najdeme to nejlepší řešení.</p>
+      <a href="./kontakt/kontakt.html" class="btn">Napište nám</a>
     </section>
   </main>
 
@@ -61,7 +99,6 @@
   <footer>
     <p>&copy; 2025 TechNova. Všechna práva vyhrazena.</p>
   </footer>
-
 
   <script type="module" src="/src/main.js"></script>
 </body>
