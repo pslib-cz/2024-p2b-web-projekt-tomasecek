@@ -1,0 +1,99 @@
+/* main.css */
+
+/* Hero sekce */
+.hero {
+    text-align: center;
+    background-color: #e0ecff;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero h1 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    margin-bottom: 1.5rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #004080;
+    color: #fff;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #002b59;
+  }
+  .benefits {
+    text-align: center;
+  }
+  
+  .benefit-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  .benefit h3 {
+    font-size: 1.2rem;
+    color: #004080;
+    margin-bottom: 0.3rem;
+  }
+  
+  .galerie {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .gallery img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s;
+  }
+  
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+  
+  .swiper {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    max-width: 400px;
+    margin-inline: auto;
+  }
+  
+  .swiper-slide img {
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .lg-thumb-outer {
+    background-color: #111; 
+  }
+  
+  .lg-thumb-item {
+    border: 2px solid transparent;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .lg-thumb-item.active {
+    border-color: #007bff; 
+  }
+  

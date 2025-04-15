@@ -1,17 +1,68 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <h1>Vítejte v TechNova</h1>
-    <p>Moderní technologická firma zaměřená na vývoj webových aplikací, správu sítí a IT poradenství. Pomáháme firmám růst díky efektivním digitálním řešením.</p>
-    <p><strong>Spolehněte se na kvalitu, rychlost a podporu.</strong></p>
-    <a href="./kontakt/kontakt.html" class="cta-button">Kontaktujte nás</a>
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechNova</title>
+  <link rel="stylesheet" href="src/general.css" />
+  <link rel="stylesheet" href="src/header.css" />
+  <link rel="stylesheet" href="src/main.css" />
+  <link rel="stylesheet" href="src/footer.css" />
+</head>
 
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<body>
+  <header>
+    <div class="logo">TechNova</div>
+    <nav class="nav">
+      <a href="/index.html">Domů</a>
+      <a href="./sluzby/sluzby.html">Služby</a>
+      <a href="./onas/o-nas.html">O nás</a>
+      <a href="./galerie/galerie.html">Galerie</a>
+      <a href="./kontakt/kontakt.html">Kontakt</a>
+    </nav>
+  </header>
+  <main>
+
+    <section class="hero">
+      <h1>Vítejte v TechNova</h1>
+      <p>
+        Jsme moderní technologická firma zaměřená na vývoj webových aplikací, správu podnikových sítí a komplexní IT poradenství.
+        Našim cílem je pomoci firmám zefektivnit jejich digitální procesy, zvýšit bezpečnost dat a podpořit růst prostřednictvím chytrých řešení.
+      </p>
+      <p>
+        Ať už jste začínající startup nebo zavedená společnost, u nás najdete spolehlivého partnera, který rozumí technologiím i vašim potřebám.
+        S námi máte jistotu, že vaše IT funguje – rychle, bezpečně a efektivně.
+      </p>
+      <a href="#kontakt" class="btn">Kontaktujte nás</a>
+    </section>
+    
+
+
+    <section class="benefits">
+      <h2>Proč právě my?</h2>
+      <div class="benefit-list">
+        <div class="benefit">
+          <h3>Rychlost</h3>
+          <p>Rychlé dodání bez zbytečných odkladů.</p>
+        </div>
+        <div class="benefit">
+          <h3>Kvalita</h3>
+          <p>Moderní technologie a precizní vývoj.</p>
+        </div>
+        <div class="benefit">
+          <h3>Podpora</h3>
+          <p>Jsme tu pro vás i po spuštění.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <footer>
+    <p>&copy; 2025 TechNova. Všechna práva vyhrazena.</p>
+  </footer>
+
+
+  <script type="module" src="./src/main.js"></script>
+</body>
 </html>
