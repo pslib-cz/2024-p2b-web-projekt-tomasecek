@@ -21,5 +21,5 @@ Cílem webu je představit firmu profesionálně a přehledně, a umožnit klien
 Web bude navržen ve Figmě – moderní tech styl, modro-šedá paleta, jednoduché rozvržení.
 
 ## 🌍 Odkazy
-- [🔗 Figma návrh – doplníš později]
-- [🔗 GitHub Pages – doplníš po nasazení]
+- [🔗 Figma návrh]
+- [🔗 GitHub Pages]
