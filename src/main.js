@@ -1,16 +1,28 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const hamMenu = document.querySelector(".ham-menu");
+  const offScreenMenu = document.querySelector(".off-screen-menu");
+  const closeBtn = document.getElementById("closeMenu");
 
-    const hamMenu = document.querySelector(".ham-menu");
-    const offScreenMenu = document.querySelector(".off-screen-menu");
-  
-    if (hamMenu && offScreenMenu) {
-      hamMenu.addEventListener("click", () => {
-        hamMenu.classList.toggle("active");
-        offScreenMenu.classList.toggle("active");
-      });
-    }
-  
+  if (hamMenu) {
+    hamMenu.addEventListener("click", () => {
+      hamMenu.classList.toggle("active");
+      offScreenMenu?.classList.toggle("active");
+    });
+  }
 
+  if (closeBtn) {
+    closeBtn.addEventListener("click", () => {
+      hamMenu.classList.remove("active");
+      offScreenMenu?.classList.remove("active");
+    });
+  }
+
+  offScreenMenu?.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      hamMenu.classList.remove("active");
+      offScreenMenu.classList.remove("active");
+    });
+  })
     if (window.Swiper) {
       const swiper = new Swiper(".swiper", {
         slidesPerView: 1,
