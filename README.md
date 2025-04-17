@@ -22,4 +22,4 @@ Web bude navržen ve Figmě – moderní tech styl, modro-šedá paleta, jednodu
 
 ## 🌍 Odkazy
 - [🔗 Figma návrh]
-- [🔗 GitHub Pages https://pslib-cz.github.io/2024-p2b-web-projekt-tomasecek/]
+- [🔗 GitHub Pages](https://pslib-cz.github.io/2024-p2b-web-projekt-tomasecek/)
