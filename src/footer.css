@@ -1,0 +1,14 @@
+footer {
+  
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+
+.footer-text{
+  color: var(--clr-primary);
+}
