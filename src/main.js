@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const hamMenu = document.querySelector(".ham-menu");
   const offScreenMenu = document.querySelector(".off-screen-menu");
-  const closeBtn = document.getElementById("closeMenu");
   const themeToggle = document.getElementById("themeToggle");
 
   if (hamMenu) {
@@ -9,36 +8,20 @@ document.addEventListener("DOMContentLoaded", () => {
       hamMenu.classList.toggle("active");
       offScreenMenu?.classList.toggle("active");
 
-
-      if (offScreenMenu?.classList.contains("active")) {
-        document.body.style.overflow = "hidden";
-      } else {
-        document.body.style.overflow = "";
-      }
+      document.body.style.overflow = offScreenMenu?.classList.contains("active") ? "hidden" : "";
     });
   }
-
-
-  if (closeBtn) {
-    closeBtn.addEventListener("click", () => {
-      hamMenu.classList.remove("active");
-      offScreenMenu?.classList.remove("active");
-      document.body.style.overflow = "";
-    });
-  }
-
 
   offScreenMenu?.querySelectorAll("a").forEach(link => {
     link.addEventListener("click", () => {
-      hamMenu.classList.remove("active");
-      offScreenMenu.classList.remove("active");
+      hamMenu?.classList.remove("active");
+      offScreenMenu?.classList.remove("active");
       document.body.style.overflow = "";
     });
   });
 
-
   if (window.Swiper) {
-    const swiper = new Swiper(".swiper", {
+    new Swiper(".swiper", {
       slidesPerView: 1,
       spaceBetween: 10,
       loop: true,
@@ -49,7 +32,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-
   const lightGalleryContainer = document.getElementById("lightgallery");
   if (lightGalleryContainer && window.lightGallery) {
     lightGallery(lightGalleryContainer, {
@@ -58,7 +40,6 @@ document.addEventListener("DOMContentLoaded", () => {
       speed: 500,
     });
   }
-
 
   if (localStorage.getItem("theme") === "dark") {
     document.documentElement.setAttribute("data-theme", "dark");
