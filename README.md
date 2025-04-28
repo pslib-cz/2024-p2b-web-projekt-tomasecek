@@ -21,6 +21,6 @@ Cílem webu je představit firmu profesionálně a přehledně, a umožnit klien
 Web bude navržen ve Figmě – moderní tech styl, modro-šedá paleta, jednoduché rozvržení.
 
 ## 🌍 Odkazy
-- [🔗 Figma návrh] (https://www.figma.com/design/NBXFSdoMJ8pa0SyeEOAgFT/%C5%BDaludTom%C3%A1%C5%A1?t=N9lTaNAr4zY6dUP1-1)
+- [🔗 Figma návrh](https://www.figma.com/design/NBXFSdoMJ8pa0SyeEOAgFT/%C5%BDaludTom%C3%A1%C5%A1?t=N9lTaNAr4zY6dUP1-1)
 - [🔗 GitHub Pages](https://pslib-cz.github.io/2024-p2b-web-projekt-tomasecek/)
 
