@@ -1,5 +1,5 @@
 :root {
-  --clr-primary: #004080;
+  --clr-primary: #2C72B8;
   --clr-primary-dark: #002b59;
   --clr-accent: #0070c0;
   --clr-light: #f4f7fa;
@@ -14,7 +14,7 @@
 }
 
 :root[data-theme="dark"] {
-  --clr-primary: #93c5fd;
+  --clr-primary: #2C72B8;
   --clr-primary-dark: #1e293b;
   --clr-accent: #3b82f6;
   --clr-light: #1e1e1e;
@@ -37,7 +37,6 @@ body {
   line-height: 1.5;
   background-color: var(--clr-light);
   color: var(--clr-text);
-  padding: 1rem;
 }
 
 a {
