@@ -5,18 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TechNova</title>
 
-  <link rel="stylesheet" href="src/general.css" />
-  <link rel="stylesheet" href="src/header.css" />
-  <link rel="stylesheet" href="src/hamburger.css" />
-  <link rel="stylesheet" href="src/main.css" />
-  <link rel="stylesheet" href="src/footer.css" />
+  <link rel="stylesheet" href="./src/general.css" />
+  <link rel="stylesheet" href="./src/header.css" />
+  <link rel="stylesheet" href="./src/hamburger.css" />
+  <link rel="stylesheet" href="./src/main.css" />
+  <link rel="stylesheet" href="./src/footer.css" />
 </head>
 
 <body>
   <header>
     <div class="off-screen-menu">
       <ul>
-        <li><a href="/index.html">Domů</a></li>
+        <li><a href="./index.html">Domů</a></li>
         <li><a href="./sluzby/sluzby.html">Služby</a></li>
         <li><a href="./onas/o-nas.html">O nás</a></li>
         <li><a href="./galerie/galerie.html">Galerie</a></li>
@@ -26,27 +26,24 @@
             <label class="theme-toggle">
               <input type="checkbox" id="themeToggle" />
               <span class="slider">
-                <img src="public/icons/sun.svg" alt="Light mode" class="icon sun" />
-                <img src="public/icons/moon-fill.svg" alt="Dark mode" class="icon moon" />
+                <img src="./public/icons/sun.svg" alt="Light mode" class="icon sun" />
+                <img src="./public/icons/moon-fill.svg" alt="Dark mode" class="icon moon" />
               </span>
             </label>
           </li>
-          
         </div>
       </ul>
     </div>
 
-    <header>
-      <nav>
-        <div class="logo">TechNova</div>
-        <div class="ham-menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </nav>
-    </header>
-    
+    <nav>
+      <div class="logo">TechNova</div>
+      <div class="ham-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
 
   <main>
 
@@ -117,7 +114,7 @@
         </div>
         <div class="service">
           <h3>Správa sítí</h3>
-          <p>Kompletní návrh, realizace a údržba podnikových sítí.</p>
+          <p>Kompletní návrh, realizace a údřba podnikových sítí.</p>
         </div>
         <div class="service">
           <h3>Cloud & Hosting</h3>
@@ -143,10 +140,11 @@
       </div>
     </section>
   </main>
+
   <footer class="footer-text">
     <p>&copy; 2025 TechNova. Všechna práva vyhrazena.</p>
   </footer>
 
-  <script type="module" src="/src/main.js"></script>
+  <script type="module" src="./src/main.js"></script>
 </body>
 </html>
