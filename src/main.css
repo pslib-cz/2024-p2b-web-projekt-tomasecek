@@ -100,8 +100,8 @@
 }
 
 .benefit-card h3 img {
-  width: 32px;
-  height: 32px;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 
@@ -116,6 +116,7 @@
   margin: 0;
   color: #333;
 }
+
 
 .why-us-container {
   border: 2px solid var(--clr-primary);
@@ -143,4 +144,49 @@
   margin: 0;
   color: var(--clr-text);
 }
+
+.services {
+  background-color: var(--clr-primary); 
+  color: var(--clr-light); 
+  padding: 2rem; 
+  border-radius: var(--radius); 
+  max-width: 400px; 
+  margin: 1rem;
+}
+
+.services-h2 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--clr-light); 
+  text-align: left; 
+  margin-bottom: 1.5rem;
+}
+
+.service {
+  display: flex; 
+  align-items: flex-start; 
+  gap: 1rem; 
+  margin-bottom: 1.5rem; 
+}
+
+.service img {
+  width: 1.5rem;
+  height: 1.5rem; 
+  margin-top: 0.3rem;
+}
+
+.service h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+  color: var(--clr-light);
+}
+
+.service-text {
+  font-size: 0.9rem;
+  color: var(--clr-light);
+  margin: 0;
+  line-height: 1.4;
+}
+
 
