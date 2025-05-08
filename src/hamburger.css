@@ -151,3 +151,13 @@
     transform: translateX(30px);
   }
   
+  @media (min-width: 1024px) {
+    .ham-menu {
+      display: none; /* Skryje hamburger menu */
+    }
+  
+    .nav-links {
+      display: flex; /* Zobrazí navigační odkazy */
+      gap: 1.5rem; /* Mezera mezi odkazy */
+    }
+  }
