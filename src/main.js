@@ -1,5 +1,5 @@
-import Swiper from './swiper/bundle.js'; // Přidána přípona .js
-import './swiper/css/bundle.css'; // Přidána přípona .css
+import Swiper from 'swiper/bundle';
+import 'swiper/css/bundle';
 
 document.addEventListener('DOMContentLoaded', () => {
   const swiper = new Swiper('.swiper', {
