@@ -14,7 +14,7 @@
     text-align: center;
     font-size: 1.8rem;
     transition: var(--transition);
-    z-index: 1000;
+    z-index: 999;
   }
   
   .off-screen-menu.active {

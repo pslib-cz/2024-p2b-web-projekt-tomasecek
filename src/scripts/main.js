@@ -1,5 +1,7 @@
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
+import lightGallery from 'lightgallery';
+import 'lightgallery/css/lightgallery.css';
 
 document.addEventListener('DOMContentLoaded', () => {
   const swiper = new Swiper('.swiper', {
@@ -11,10 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
       disableOnInteraction: false,
     },
   });
-});
 
-
-document.addEventListener("DOMContentLoaded", () => {
   const hamMenu = document.querySelector(".ham-menu");
   const offScreenMenu = document.querySelector(".off-screen-menu");
   const themeToggle = document.getElementById("themeToggle");
@@ -36,24 +35,28 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  if (window.Swiper) {
-    new Swiper(".swiper", {
-      slidesPerView: 1,
-      spaceBetween: 10,
-      loop: true,
-      breakpoints: {
-        640: { slidesPerView: 2 },
-        1024: { slidesPerView: 3 },
-      },
-    });
-  }
-
-  const lightGalleryContainer = document.getElementById("lightgallery");
-  if (lightGalleryContainer && window.lightGallery) {
-    lightGallery(lightGalleryContainer, {
-      selector: "a",
-      plugins: [lgZoom, lgThumbnail],
+  const galleryContainer = document.querySelector(".gallery-container");
+  if (galleryContainer) {
+    const lightGalleryInstance = lightGallery(galleryContainer, {
+      selector: ".gallery-item",
+      download: false,
       speed: 500,
+    });
+
+    // Skryje hamburger menu při otevření LightGallery
+    lightGalleryInstance.on("lgBeforeOpen", () => {
+      if (hamMenu) {
+        hamMenu.style.visibility = "hidden";
+        hamMenu.style.zIndex = "-1";
+      }
+    });
+
+    // Znovu zobrazí hamburger menu po zavření LightGallery
+    lightGalleryInstance.on("lgAfterClose", () => {
+      if (hamMenu) {
+        hamMenu.style.visibility = "visible";
+        hamMenu.style.zIndex = "";
+      }
     });
   }
 
