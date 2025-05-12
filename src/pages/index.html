@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechNova</title>
+
+  <link rel="stylesheet" href="/src/styles/general.css" />
+  <link rel="stylesheet" href="/src/styles/header.css" />
+  <link rel="stylesheet" href="/src/styles/hamburger.css" />
+  <link rel="stylesheet" href="/src/styles/main.css" />
+  <link rel="stylesheet" href="/src/styles/footer.css" />
+</head>
+
+<body>
+  <header>
+    <div class="off-screen-menu">
+      <ul>
+        <li><a href="/src/pages/index.html">Domů</a></li>
+        <li><a href="/src/pages/sluzby/sluzby.html">Služby</a></li>
+        <li><a href="/src/pages/onas/o-nas.html">O nás</a></li>
+        <li><a href="/src/pages/galerie/galerie.html">Galerie</a></li>
+        <li><a href="/src/pages/kontakt/kontakt.html">Kontakt</a></li>
+        <div class="theme-toggle-wrapper">
+          <li class="theme-toggle-container">
+            <label class="theme-toggle">
+              <input type="checkbox" id="themeToggle" />
+              <span class="slider">
+                <img src="/images/icons/sun.svg" alt="Light mode" class="icon sun" />
+                <img src="/images/icons/moon-fill.svg" alt="Dark mode" class="icon moon" />
+              </span>
+            </label>
+          </li>
+        </div>
+      </ul>
+    </div>
+
+
+    <nav>
+      <div class="logo">TechNova</div>
+      <div class="ham-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="hero-inner">
+        <h1 class="h1-hero">Digitální technologie, které posunou vpřed</h1>
+        <p class="p-hero">Transformujeme vaši firmu pomocí inovativních IT řešení a bezpečných webových systémů.</p>
+        <a href="/src/pages/kontakt/kontakt.html" class="btn">Získejte nabídku</a>
+        <img class="person-img" src="/images/person.png" alt="Person Illustration" class="hero-image" />
+      </div>
+    </section>
+
+
+    <section class="why-us">
+      <div class="why-us-container">
+        <h2>Proč si vybrat právě nás?</h2>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+    
+            <div class="swiper-slide benefit-card">
+              <h3>
+                <img src="/images/icons/phone.png" alt="Podpora" />
+                Podpora
+              </h3>
+              <p class="text-swiper">Jsme tu pro vás &ndash; spolehlivá, proaktivní a kdykoli je potřebujete.</p>
+            </div>
+    
+            <div class="swiper-slide benefit-card">
+              <h3>
+                <img src="/images/icons/lock.png" alt="Bezpečnost" />
+                Bezpečnost
+              </h3>
+              <p class="text-swiper">Ochrana dat je u nás prioritou &ndash; od návrhu po nasazení.</p>
+            </div>
+    
+            <div class="swiper-slide benefit-card">
+              <h3>
+                <img src="/images/icons/lightbulb.png" alt="Inovace" />
+                Inovace
+              </h3>
+              <p class="text-swiper">Moderní technologie a kreativní přístup k vývoji.</p>
+            </div>
+    
+            <div class="swiper-slide benefit-card">
+              <h3>
+                <img src="/images/icons/puzzle-piece.png" alt="Flexibilita" />
+                Flexibilita
+              </h3>
+              <p class="text-swiper">Přizpůsobíme se vašim konkrétním potřebám a rozpočtu.</p>
+            </div>
+    
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="services">
+      <div class="container">
+        <h2 class="services-h2">Naše služby</h2>
+        <div class="service">
+          <img src="/images/icons/sphere.png" alt="Webové aplikace">
+          <div>
+            <h3>Webové aplikace</h3>
+            <p class="service-text">Vývoj bezpečných webových řešení</p>
+          </div>
+        </div>
+        <div class="service">
+          <img src="/images/icons/tools.png" alt="Správa sítí">
+          <div>
+            <h3>Správa sítí</h3>
+            <p class="service-text">Optimalizace cloudu pro podnikání</p>
+          </div>
+        </div>
+        <div class="service">
+          <img src="/images/icons/cloud-upload.png" alt="Cloud & Hosting">
+          <div>
+            <h3>Cloud & Hosting</h3>
+            <p class="service-text">Kompletní návrh a správa firemních sítí</p>
+          </div>
+        </div>
+        <div class="service">
+          <img src="/images/icons/bubble.png" alt="IT Poradenství">
+          <div>
+            <h3>IT Poradenství</h3>
+            <p class="service-text">Strategické a technologické konzultace</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="about-image">
+      <img src="/images/person_pc.png" alt="Person Illustration" />
+    </section>
+    
+    <section class="about">
+      <div class="about-inner">
+        <div class="about-text">
+          <h2>O nás</h2>
+          <p>
+            Jsme tým odborníků s vášní pro technologie.  
+            Stavíme spolehlivá a inovativní IT řešení, která pomáhají firmám růst a být konkurenceschopné.
+          </p>
+          <a href="/src/pages/onas/o-nas.html" class="o-nas-btn">O nás</a>
+        </div>
+      </div>
+    </section>
+  <footer class="footer-text">
+    <p>&copy; 2025 TechNova. Všechna práva vyhrazena.</p>
+  </footer>
+
+  <script type="module" src="/src/scripts/main.js"></script>
+</body>
+</html>
