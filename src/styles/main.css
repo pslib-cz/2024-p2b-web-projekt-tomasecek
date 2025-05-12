@@ -16,7 +16,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 100px;
+  width: 10.8rem;
   height: auto;
 }
 
@@ -50,14 +50,6 @@
 
 .btn:hover {
   background-color: var(--clr-light); 
-}
-
-.person-img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 11rem;
-  height: auto;
 }
 
 .swiper {
@@ -129,7 +121,7 @@
 }
 
 .why-us-container h2 {
-  font-size: 1.5rem;
+  font-size: 1.45rem;
   font-weight: bold;
   color: var(--clr-primary);
   text-align: left;
@@ -143,6 +135,7 @@
   line-height: 1.4;
   margin: 0;
   color: var(--clr-text);
+  max-width: fit-content;
 }
 
 .services {

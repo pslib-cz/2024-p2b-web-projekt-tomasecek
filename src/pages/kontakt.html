@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontakt | TechNova</title>
+  
+  <link rel="stylesheet" href="/src/styles/general.css" />
+  <link rel="stylesheet" href="/src/styles/header.css" />
+  <link rel="stylesheet" href="/src/styles/hamburger.css" />
+  <link rel="stylesheet" href="/src/styles/contact.css" />
+  <link rel="stylesheet" href="/src/styles/footer.css" />
+</head>
+
+<body>
+  <header>
+    <div class="off-screen-menu">
+      <ul>
+        <li><a href="/src/pages/index.html">Domů</a></li>
+        <li><a href="/src/pages/sluzby/sluzby.html">Služby</a></li>
+        <li><a href="/src/pages/onas/o-nas.html">O nás</a></li>
+        <li><a href="/src/pages/galerie/galerie.html">Galerie</a></li>
+        <li><a href="/src/pages/kontakt/kontakt.html">Kontakt</a></li>
+        <div class="theme-toggle-wrapper">
+          <li class="theme-toggle-container">
+            <label class="theme-toggle">
+              <input type="checkbox" id="themeToggle" />
+              <span class="slider">
+                <img src="/images/icons/sun.svg" alt="Light mode" class="icon sun" />
+                <img src="/images/icons/moon-fill.svg" alt="Dark mode" class="icon moon" />
+              </span>
+            </label>
+          </li>
+        </div>
+      </ul>
+    </div>
+
+    <nav>
+      <div class="logo">TechNova</div>
+      <div class="ham-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact">
+      <h1>Kontaktujte nás</h1>
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <p>Telefon: +420 123 456 789</p>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <p>E-mail: info@technova.cz</p>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <p>Adresa: TechNova s.r.o., Technologická 12, Praha 4</p>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-clock"></i>
+          <p>Otevírací doba: Po-Pá: 8:00-17:00</p>
+        </div>
+      </div>
+      <a href="mailto:info@technova.cz" class="btn">Napsat zprávu</a>
+    </section>
+  </main>
+
+  <footer class="footer-text">
+    <p>&copy; 2025 TechNova. Všechna práva vyhrazena.</p>
+  </footer>
+
+  <script type="module" src="/src/scripts/main.js"></script>
+</body>
+</html>

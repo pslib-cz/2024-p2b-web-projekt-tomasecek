@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galerie | TechNova</title>
+  
+  <link rel="stylesheet" href="/src/styles/general.css" />
+  <link rel="stylesheet" href="/src/styles/header.css" />
+  <link rel="stylesheet" href="/src/styles/hamburger.css" />
+  <link rel="stylesheet" href="/src/styles/gallery.css" />
+</head>
+
+<body>
+  <header>
+    <div class="off-screen-menu">
+      <ul>
+        <li><a href="/src/pages/index.html">Domů</a></li>
+        <li><a href="/src/pages/sluzby/sluzby.html">Služby</a></li>
+        <li><a href="/src/pages/onas/o-nas.html">O nás</a></li>
+        <li><a href="/src/pages/galerie/galerie.html">Galerie</a></li>
+        <li><a href="/src/pages/kontakt/kontakt.html">Kontakt</a></li>
+        <div class="theme-toggle-wrapper">
+          <li class="theme-toggle-container">
+            <label class="theme-toggle">
+              <input type="checkbox" id="themeToggle" />
+              <span class="slider">
+                <img src="/images/icons/sun.svg" alt="Light mode" class="icon sun" />
+                <img src="/images/icons/moon-fill.svg" alt="Dark mode" class="icon moon" />
+              </span>
+            </label>
+          </li>
+        </div>
+      </ul>
+    </div>
+
+    <nav>
+      <div class="logo">TechNova</div>
+      <div class="ham-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="gallery">
+      <h1>Galerie</h1>
+      <div class="gallery-container">
+        <div class="gallery-item">
+          <img src="/images/gallery/image1.jpg" alt="Obrázek 1" />
+        </div>
+        <div class="gallery-item">
+          <img src="/images/gallery/image2.jpg" alt="Obrázek 2" />
+        </div>
+        <div class="gallery-item">
+          <img src="/images/gallery/image3.jpg" alt="Obrázek 3" />
+        </div>
+        <div class="gallery-item">
+          <img src="/images/gallery/image4.jpg" alt="Obrázek 4" />
+        </div>
+        <div class="gallery-item">
+          <img src="/images/gallery/image5.jpg" alt="Obrázek 5" />
+        </div>
+        <div class="gallery-item">
+          <img src="/images/gallery/image6.jpg" alt="Obrázek 6" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="footer-text">
+    <p>&copy; 2025 TechNova. Všechna práva vyhrazena.</p>
+  </footer>
+
+  <script type="module" src="/src/scripts/main.js"></script>
+</body>
+</html>
