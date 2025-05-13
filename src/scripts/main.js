@@ -27,6 +27,28 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+
+
+  document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("contactForm");
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault(); // Zabrání odeslání formuláře
+
+    // Zkontroluje, zda jsou všechna pole vyplněná
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    if (name === "" || email === "" || message === "") {
+      alert("Vyplňte prosím všechny kolonky.");
+    } else {
+      // Skryje formulář a zobrazí zprávu o úspěšném odeslání
+      form.innerHTML = "<p class='success-message'>Úspěšně odesláno!</p>";
+    }
+  });
+});
+
   offScreenMenu?.querySelectorAll("a").forEach(link => {
     link.addEventListener("click", () => {
       hamMenu?.classList.remove("active");
@@ -75,3 +97,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
