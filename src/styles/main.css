@@ -72,7 +72,7 @@
 }
 
 .swiper-slide {
-  background-color: var(--clr-white);
+  background-color: var(--clr-light);
   border-radius: 1rem;
   padding: 0.5rem;
   text-align: left;
@@ -253,7 +253,7 @@
 
 .services-page {
   padding: 2rem;
-  background-color: var(--clr-light);
+  background-color: var(--clr-white);
   border: 2px solid var(--clr-primary);
   border-radius: var(--radius);
   box-shadow: var(--box-shadow);
@@ -276,7 +276,7 @@
   align-items: center;
   text-align: left;
   padding: 1.5rem;
-  background-color: var(--clr-white);
+    background-color: var(--clr-light);
   border-radius: var(--radius);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: transform var(--transition), box-shadow var(--transition);
