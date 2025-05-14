@@ -120,6 +120,8 @@
   box-shadow: 0 2px 8px rgba(0, 85, 212, 0.05);
 }
 
+
+
 .why-us-container h2 {
   font-size: 1.45rem;
   font-weight: bold;
@@ -325,4 +327,33 @@
 
 .services-page-card:active {
   transform: scale(1); 
+}
+
+
+.why-us-swiper {
+  display: block; 
+  position: relative; 
+}
+
+.why-us-grid {
+  display: none; 
+}
+
+
+@media (min-width: 1024px) {
+  .page-wrapper {
+    padding-left: 250px; 
+    padding-right: 250px;
+    background-color: var(--clr-wrapper); 
+  }
+
+.page-content, main {
+  padding-top: 0.8em; 
+  margin: 0;
+  background-color: var(--clr-light); 
+}
+
+  .hero-inner{
+     margin: 6em;
+  }
 }

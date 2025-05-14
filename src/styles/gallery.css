@@ -18,7 +18,6 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 }
-
 .gallery-item {
   display: block;
   overflow: hidden;

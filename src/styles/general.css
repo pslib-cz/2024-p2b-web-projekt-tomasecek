@@ -8,6 +8,7 @@
   --clr-text-light: #444;
   --clr-footer:#121212;
   --clr-primary-text:#ffffff;
+  --clr-wrapper:rgba(0, 85, 212, 0.5);
 
   --radius: 1rem;
   --section-padding: 3rem 1rem;
@@ -27,6 +28,7 @@
   --box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
   --clr-footer:#93C5FD;
   --clr-primary-text:#2C72B8;
+  --clr-wrapper:rgba(43, 74, 121, 0.5);
 }
 
 
