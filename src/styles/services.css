@@ -1,0 +1,65 @@
+.services-page-container {
+  display: grid; /* Použití grid layoutu */
+  grid-template-columns: 1fr; /* Jeden sloupec na mobilu */
+  gap: 2rem; /* Mezera mezi kartami */
+  align-items: center;
+  justify-items: center; /* Zarovnání karet na střed */
+}
+
+.services-page-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  padding: 1.5rem;
+  margin-top: 4rem;
+  background-color: var(--clr-light);
+  border-radius: var(--radius);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform var(--transition), box-shadow var(--transition);
+  cursor: pointer;
+  gap: 1rem;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+.services-page-card h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--clr-primary);
+  margin-bottom: 0.5rem;
+  text-align: left;
+  width: 100%;
+}
+
+.services-page-card p {
+  font-size: 1rem;
+  color: var(--clr-text);
+  line-height: 1.4;
+  text-align: left;
+  width: 100%;
+}
+
+.services-page-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.services-page-card:active {
+  transform: scale(1);
+}
+
+@media (min-width: 768px) {
+  .services-page-container {
+    grid-template-columns: repeat(2, 1fr); /* Dva sloupce na tabletu */
+    gap: 2rem; /* Mezera mezi kartami */
+  }
+}
+
+@media (min-width: 1024px) {
+  .services-page-container {
+    grid-template-columns: repeat(2, 1fr); /* Tři sloupce na desktopu */
+    gap: 2rem; /* Mezera mezi kartami */
+  }
+}

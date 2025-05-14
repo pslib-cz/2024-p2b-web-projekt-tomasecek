@@ -3,48 +3,65 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TechNova</title>
+  <title>Domů | TechNova</title>
 
   <link rel="stylesheet" href="/src/styles/general.css" />
   <link rel="stylesheet" href="/src/styles/header.css" />
   <link rel="stylesheet" href="/src/styles/hamburger.css" />
   <link rel="stylesheet" href="/src/styles/main.css" />
   <link rel="stylesheet" href="/src/styles/footer.css" />
+  <link rel="stylesheet" href="/src/styles/services.css" />
 
 </head>
 
 <body>
-  <header>
-    <div class="off-screen-menu">
-      <ul>
-        <li><a href="./index.html">Domů</a></li>
-        <li><a href="./sluzby.html">Služby</a></li>
-        <li><a href="./o-nas.html">O nás</a></li>
-        <li><a href="./gallery.html">Galerie</a></li>
-        <li><a href="./kontakt.html">Kontakt</a></li>
-        <div class="theme-toggle-wrapper">
-          <li class="theme-toggle-container">
-            <label class="theme-toggle">
-              <input type="checkbox" id="themeToggle" />
-              <span class="slider">
-                <img src="/images/icons/sun.svg" alt="Light mode" class="icon sun" />
-                <img src="/images/icons/moon-fill.svg" alt="Dark mode" class="icon moon" />
-              </span>
-            </label>
-          </li>
-        </div>
-      </ul>
-    </div>
+  <div class="page-wrapper">
+    <div class="page-content">
+<header>
+  <div class="off-screen-menu">
+    <ul>
+      <li><a href="./index.html">Domů</a></li>
+      <li><a href="./sluzby.html">Služby</a></li>
+      <li><a href="./o-nas.html">O nás</a></li>
+      <li><a href="./gallery.html">Galerie</a></li>
+      <li><a href="./kontakt.html">Kontakt</a></li>
+      <li class="theme-toggle-container">
+        <label class="theme-toggle">
+          <input type="checkbox" id="themeToggle">
+          <span class="slider">
+            <img src="/images/icons/sun.svg" alt="Light mode" class="icon sun" />
+            <img src="/images/icons/moon-fill.svg" alt="Dark mode" class="icon moon" />
+          </span>
+        </label>
+      </li>
+    </ul>
+  </div>
 
-    <nav>
-      <div class="logo">TechNova</div>
-      <div class="ham-menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </nav>
-  </header>
+  <nav>
+    <a href="./index.html" class="logo">TechNova</a>
+    <div class="nav-links">
+      <a href="./index.html">Domů</a>
+      <a href="./sluzby.html">Služby</a>
+      <a href="./o-nas.html">O nás</a>
+      <a href="./gallery.html">Galerie</a>
+      <a href="./kontakt.html">Kontakt</a>
+    </div>
+    <div class="theme-toggle-container-desktop">
+      <label class="theme-toggle-desktop">
+        <input type="checkbox" id="themeToggle-desktop">
+        <span class="slider">
+          <img src="/images/icons/sun.svg" alt="Light mode" class="icon sun" />
+          <img src="/images/icons/moon-fill.svg" alt="Dark mode" class="icon moon" />
+        </span>
+      </label>
+    </div>
+    <div class="ham-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+</header>
 <main>
   <section class="services-page">
     <h2 class="services-page-h2">Naše služby</h2>
@@ -82,9 +99,12 @@
   </section>
 </main>
 
-  <footer class="footer-text">
-    <p>&copy; 2025 TechNova. Všechna práva vyhrazena.</p>
-  </footer>
+
+      <footer class="footer-text">
+        <p>&copy; 2025 TechNova. Všechna práva vyhrazena.</p>
+      </footer>
+    </div>
+  </div>
 
   <script type="module" src="/src/scripts/main.js"></script>
 </body>

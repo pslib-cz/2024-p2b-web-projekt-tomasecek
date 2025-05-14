@@ -254,83 +254,6 @@
 }
 
 
-.services-page {
-  padding: 2rem;
-  background-color: var(--clr-white);
-  border: 2px solid var(--clr-primary);
-  border-radius: var(--radius);
-  box-shadow: var(--box-shadow);
-  margin: 5rem 1rem;
-
-}
-
-.services-page-h2 {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: var(--clr-primary);
-  text-align: left; 
-  margin-bottom: 2rem;
-}
-
-
-.services-page-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: left;
-  padding: 1.5rem;
-  background-color: var(--clr-light);
-  border-radius: var(--radius);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transition: transform var(--transition), box-shadow var(--transition);
-  cursor: pointer;
-  gap: 1rem;
-  width: 100%; 
-  max-width: 400px; 
-  box-sizing: border-box; 
-}
-
-.services-page-container {
-  display: flex;
-  flex-direction: column;
-  gap: 2.5rem;
-  align-items: center; 
-}
-.services-page-icon {
-  margin-bottom: 1rem;
-  display: flex;
-  justify-content: center; 
-  align-items: center; 
-  width: 100%; 
-}
-
-.services-page-card h3 {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: var(--clr-primary);
-  margin-bottom: 0.5rem;
-  text-align: left; 
-  width: 100%; 
-}
-
-.services-page-card p {
-  font-size: 1rem;
-  color: var(--clr-text);
-  line-height: 1.4;
-  text-align: left; 
-  width: 100%; 
-}
-
-.services-page-card:hover {
-  transform: scale(1.05); 
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-.services-page-card:active {
-  transform: scale(1); 
-}
-
-
 .why-us-swiper {
   display: block; 
   position: relative; 
@@ -358,7 +281,7 @@
 
   .hero-inner{
     margin-top: 4.5rem;
-    padding: 2.6rem;
+    padding: 3.6rem;
   }
 
 .why-us-section {
@@ -431,10 +354,11 @@
   display: grid;
   grid-template-columns: 1fr 1fr; 
   grid-template-areas: 
-    "services about"; 
-  align-items: stretch; 
-  margin: 2rem auto; 
+    "services about";
+  gap: 2rem; 
   max-width: 1200px; 
+  margin: auto;
+  margin-bottom: 3rem; 
 }
 
 .services {
@@ -448,11 +372,12 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
+  margin-left: 1rem; 
 }
 
 .about {
   grid-area: about; 
+  justify-self: end;
   border: 2px solid var(--clr-primary);
   border-radius: var(--radius);
   padding: 2rem;
@@ -462,29 +387,42 @@
   flex-direction: column; 
   justify-content: space-between; 
   align-items: center; 
-  height: 75%; 
+  margin-right: 1rem; 
+  min-width: 100%;
+  height: 80%;
+  text-align: left; 
 }
 
+.about h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--clr-primary);
+  margin-bottom: 1rem;
+}
+
+.about p {
+  font-size: 1rem;
+  color: var(--clr-text);
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
 
 .o-nas-btn {
-  position: absolute; 
-  bottom: -13.5rem; 
-  left: 65%;
-  transform: translateX(-50%);
   background-color: var(--clr-primary);
   color: var(--clr-light);
   border: none;
   border-radius: var(--radius);
-  padding: 2rem;
+  padding: 1.2rem;
   font-weight: bold;
   text-decoration: none;
   cursor: pointer;
   transition: var(--transition);
   text-align: center;
-
+  margin-top: auto; 
+  
+}
 }
 
 .o-nas-btn:hover {
   background-color: var(--clr-primary-dark);
-}
 }
