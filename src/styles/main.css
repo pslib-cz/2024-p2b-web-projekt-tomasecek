@@ -344,8 +344,6 @@
   .about-image{
     display: none;
   }
-
-
   .page-wrapper {
     padding-left: 250px; 
     padding-right: 250px;
@@ -365,32 +363,128 @@
 
 .why-us-section {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Dva sloupce stejné šířky */
+  grid-template-columns: 1fr 1fr;
   grid-template-areas: 
-    "why-us-container person-pc-image"; /* Definice oblastí */
-  gap: 2rem; /* Mezera mezi sloupci */
-  align-items: center; /* Vertikální zarovnání obsahu */
-  margin: 2rem auto; /* Vycentrování sekce */
-  max-width: 1200px; /* Maximální šířka sekce */
+    "why-us-container person-pc-image";
+  gap: 1rem; 
+  align-items: stretch;
+  margin: 2rem auto; 
+  max-width: 1200px; 
 }
-
 
 .why-us-container {
-  grid-area: why-us-container; /* Přiřazení oblasti */
+  grid-area: why-us-container; 
   border: 2px solid var(--clr-primary);
   border-radius: var(--radius);
-  padding: 1.5rem 1rem;
+  padding: 2rem 1.5rem; 
   background-color: var(--clr-white);
-  max-width: 100%;
   box-shadow: 0 2px 8px rgba(0, 85, 212, 0.05);
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between; 
 }
 
-  .about-image-desktop{
-    width: 100%; 
-    max-width: 300px; 
-    height: auto; 
-  }
+.about-image-desktop {
+  grid-area: person-pc-image; 
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+.about-image-desktop img {
+  width: 100%;
+  max-width: 400px; 
+  height: auto; 
+}
+.swiper-slide {
+  background-color: var(--clr-white);
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 2px solid var(--clr-primary);
+  width: 100%; 
+  max-width: 500px; 
+  height: auto; 
+}
+
+.swiper-slide img {
+  width: 3.1rem; 
+  margin-bottom: 1rem;
+}
+
+.swiper-slide h3 {
+  font-size: 1.5rem; 
+  font-weight: bold;
+  color: var(--clr-primary);
+  margin-bottom: 1rem;
+}
+
+.swiper-slide p {
+  font-size: 1.2rem; 
+  color: var(--clr-text);
+  line-height: 1.6;
+}
+
+.services-about-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  grid-template-areas: 
+    "services about"; 
+  align-items: stretch; 
+  margin: 2rem auto; 
+  max-width: 1200px; 
+}
+
+.services {
+  grid-area: services; 
+  border: 2px solid var(--clr-primary);
+  border-radius: var(--radius);
+  padding: 2rem;
+  background-color: var(--clr-primary);
+  color: var(--clr-light);
+  box-shadow: 0 2px 8px rgba(0, 85, 212, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.about {
+  grid-area: about; 
+  border: 2px solid var(--clr-primary);
+  border-radius: var(--radius);
+  padding: 2rem;
+  background-color: var(--clr-light);
+  box-shadow: 0 2px 8px rgba(0, 85, 212, 0.05);
+  display: flex; 
+  flex-direction: column; 
+  justify-content: space-between; 
+  align-items: center; 
+  height: 75%; 
+}
 
 
+.o-nas-btn {
+  position: absolute; 
+  bottom: -13.5rem; 
+  left: 65%;
+  transform: translateX(-50%);
+  background-color: var(--clr-primary);
+  color: var(--clr-light);
+  border: none;
+  border-radius: var(--radius);
+  padding: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  transition: var(--transition);
+  text-align: center;
 
+}
+
+.o-nas-btn:hover {
+  background-color: var(--clr-primary-dark);
+}
 }
