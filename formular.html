@@ -51,51 +51,19 @@
 <main>
   <section class="contact">
     <h1 class="contact-title">Kontaktujte nás</h1>
-    <div class="contact-info">
-      <!-- Telefon -->
-      <div class="contact-item">
-        <div class="contact-icon">
-          <img src="/2024-p2b-web-projekt-tomasecek/images/icons/phone.png" alt="Telefon" />
-        </div>
-        <div class="contact-text">
-          <p><strong>Telefon:</strong></p>
-          <p>+420 123 456 789</p>
-        </div>
+    <form id="contactForm" class="contact-form">
+      <div class="form-group">
+        <label for="name"></label>
+        <input type="text" id="name" name="name" placeholder="Vaše jméno" required />
       </div>
-
-      <!-- E-mail -->
-      <div class="contact-item">
-        <div class="contact-icon">
-          <img src="/2024-p2b-web-projekt-tomasecek/images/icons/mail4.png" alt="E-mail" />
-        </div>
-        <div class="contact-text">
-          <p><strong>E-mail:</strong></p>
-          <p>info@technova.cz</p>
-        </div>
+      <div class="form-group">
+        <input type="email" id="email" name="email" placeholder="Váš email" required />
       </div>
-
-      <div class="contact-item">
-        <div class="contact-icon">
-          <img src="/2024-p2b-web-projekt-tomasecek/images/icons/location.png" alt="Adresa" />
-        </div>
-        <div class="contact-text">
-          <p><strong>Adresa:</strong></p>
-          <p>TechNova s.r.o., Technologická 12, Praha 4</p>
-        </div>
+      <div class="form-group">
+        <textarea id="message" name="message" placeholder="Napište svou zprávu" rows="5" required></textarea>
       </div>
-
-      <div class="contact-item">
-        <div class="contact-icon">
-          <img src="/2024-p2b-web-projekt-tomasecek/images/icons/clock2.png" alt="Otevírací doba" />
-        </div>
-        <div class="contact-text">
-          <p><strong>Otevírací doba:</strong></p>
-          <p>Po-Pá: 8:00-17:00</p>
-        </div>
-      </div>
-    </div>
-
-    <a href="formular.html" class="btn">Napsat zprávu</a>
+      <button type="submit" class="btn">Odeslat</button>
+    </form>
   </section>
 </main>
   <footer class="footer-text">
