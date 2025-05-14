@@ -4,6 +4,7 @@
   padding: 1.5rem;
   border-radius: var(--radius); 
   margin: 1rem;
+  margin-top: 6rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -278,7 +279,7 @@
   align-items: center;
   text-align: left;
   padding: 1.5rem;
-    background-color: var(--clr-light);
+  background-color: var(--clr-light);
   border-radius: var(--radius);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: transform var(--transition), box-shadow var(--transition);
@@ -334,13 +335,17 @@
   display: block; 
   position: relative; 
 }
-
-.why-us-grid {
-  display: none; 
-}
-
+  .about-image-desktop{
+    display: none;
+  }
 
 @media (min-width: 1024px) {
+
+  .about-image{
+    display: none;
+  }
+
+
   .page-wrapper {
     padding-left: 250px; 
     padding-right: 250px;
@@ -354,6 +359,38 @@
 }
 
   .hero-inner{
-     margin: 6em;
+    margin-top: 4.5rem;
+    padding: 2.6rem;
   }
+
+.why-us-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dva sloupce stejné šířky */
+  grid-template-areas: 
+    "why-us-container person-pc-image"; /* Definice oblastí */
+  gap: 2rem; /* Mezera mezi sloupci */
+  align-items: center; /* Vertikální zarovnání obsahu */
+  margin: 2rem auto; /* Vycentrování sekce */
+  max-width: 1200px; /* Maximální šířka sekce */
+}
+
+
+.why-us-container {
+  grid-area: why-us-container; /* Přiřazení oblasti */
+  border: 2px solid var(--clr-primary);
+  border-radius: var(--radius);
+  padding: 1.5rem 1rem;
+  background-color: var(--clr-white);
+  max-width: 100%;
+  box-shadow: 0 2px 8px rgba(0, 85, 212, 0.05);
+}
+
+  .about-image-desktop{
+    width: 100%; 
+    max-width: 300px; 
+    height: auto; 
+  }
+
+
+
 }
