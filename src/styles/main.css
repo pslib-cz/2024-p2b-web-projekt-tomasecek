@@ -409,8 +409,10 @@
   min-width: 100%;
   height: 80%;
   text-align: left; 
-  padding-bottom: 4.5rem; /* přidá místo dole pro tlačítko */
+  padding-bottom: 4.5rem; 
   overflow: hidden;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .about h2 {

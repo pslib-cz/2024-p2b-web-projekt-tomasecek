@@ -3,101 +3,119 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kontakt | TechNova</title>
-  
+  <title>Domů | TechNova</title>
+
   <link rel="stylesheet" href="/src/styles/general.css" />
   <link rel="stylesheet" href="/src/styles/header.css" />
   <link rel="stylesheet" href="/src/styles/hamburger.css" />
-  <link rel="stylesheet" href="/src/styles/contact.css" />
+  <link rel="stylesheet" href="/src/styles/main.css" />
   <link rel="stylesheet" href="/src/styles/footer.css" />
+    <link rel="stylesheet" href="/src/styles/contact.css" />
 </head>
 
 <body>
-  <header>
-    <div class="off-screen-menu">
-      <ul>
-        <li><a href="./index.html">Domů</a></li>
-        <li><a href="./sluzby.html">Služby</a></li>
-        <li><a href="./o-nas.html">O nás</a></li>
-        <li><a href="./gallery.html">Galerie</a></li>
-        <li><a href="./kontakt.html">Kontakt</a></li>
-        <div class="theme-toggle-wrapper">
-          <li class="theme-toggle-container">
-            <label class="theme-toggle">
-              <input type="checkbox" id="themeToggle" />
-              <span class="slider">
-                <img src="/images/icons/sun.svg" alt="Light mode" class="icon sun" />
-                <img src="/images/icons/moon-fill.svg" alt="Dark mode" class="icon moon" />
-              </span>
-            </label>
-          </li>
-        </div>
-      </ul>
+  <div class="page-wrapper">
+    <div class="page-content">
+<header>
+  <div class="off-screen-menu">
+    <ul>
+      <li><a href="./index.html">Domů</a></li>
+      <li><a href="./sluzby.html">Služby</a></li>
+      <li><a href="./o-nas.html">O nás</a></li>
+      <li><a href="./gallery.html">Galerie</a></li>
+      <li><a href="./kontakt.html">Kontakt</a></li>
+      <li class="theme-toggle-container">
+        <label class="theme-toggle">
+          <input type="checkbox" id="themeToggle">
+          <span class="slider">
+            <img src="/images/icons/sun.svg" alt="Light mode" class="icon sun" />
+            <img src="/images/icons/moon-fill.svg" alt="Dark mode" class="icon moon" />
+          </span>
+        </label>
+      </li>
+    </ul>
+  </div>
+
+  <nav>
+    <a href="./index.html" class="logo">TechNova</a>
+    <div class="nav-links">
+      <a href="./index.html">Domů</a>
+      <a href="./sluzby.html">Služby</a>
+      <a href="./o-nas.html">O nás</a>
+      <a href="./gallery.html">Galerie</a>
+      <a href="./kontakt.html">Kontakt</a>
     </div>
-
-    <nav>
-      <a href="./index.html" class="logo">TechNova</a>
-      <div class="ham-menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </nav>
-  </header>
-
-<main>
-  <section class="contact">
-    <h1 class="contact-title">Kontaktujte nás</h1>
-    <div class="contact-info">
-      <!-- Telefon -->
-      <div class="contact-item">
-        <div class="contact-icon">
-          <img src="/images/icons/phone.png" alt="Telefon" />
-        </div>
-        <div class="contact-text">
-          <p><strong>Telefon:</strong></p>
-          <p>+420 123 456 789</p>
-        </div>
-      </div>
-
-      <!-- E-mail -->
-      <div class="contact-item">
-        <div class="contact-icon">
-          <img src="/images/icons/mail4.png" alt="E-mail" />
-        </div>
-        <div class="contact-text">
-          <p><strong>E-mail:</strong></p>
-          <p>info@technova.cz</p>
-        </div>
-      </div>
-
-      <div class="contact-item">
-        <div class="contact-icon">
-          <img src="/images/icons/location.png" alt="Adresa" />
-        </div>
-        <div class="contact-text">
-          <p><strong>Adresa:</strong></p>
-          <p>TechNova s.r.o., Technologická 12, Praha 4</p>
-        </div>
-      </div>
-
-      <div class="contact-item">
-        <div class="contact-icon">
-          <img src="/images/icons/clock2.png" alt="Otevírací doba" />
-        </div>
-        <div class="contact-text">
-          <p><strong>Otevírací doba:</strong></p>
-          <p>Po-Pá: 8:00-17:00</p>
-        </div>
-      </div>
+    <div class="theme-toggle-container-desktop">
+      <label class="theme-toggle-desktop">
+        <input type="checkbox" id="themeToggle-desktop">
+        <span class="slider">
+          <img src="/images/icons/sun.svg" alt="Light mode" class="icon sun" />
+          <img src="/images/icons/moon-fill.svg" alt="Dark mode" class="icon moon" />
+        </span>
+      </label>
     </div>
+    <div class="ham-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+</header>
+    <main>
+      <section class="contact">
+        <h1 class="contact-title">Kontaktujte nás</h1>
+        <div class="contact-info">
 
-    <a href="formular.html" class="btn">Napsat zprávu</a>
-  </section>
-</main>
-  <footer class="footer-text">
-    <p>&copy; 2025 TechNova. Všechna práva vyhrazena.</p>
-  </footer>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <img src="/images/icons/phone.png" alt="Telefon" />
+            </div>
+            <div class="contact-text">
+              <p><strong>Telefon:</strong></p>
+              <p>+420 123 456 789</p>
+            </div>
+          </div>
+
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <img src="/images/icons/mail4.png" alt="E-mail" />
+            </div>
+            <div class="contact-text">
+              <p><strong>E-mail:</strong></p>
+              <p>info@technova.cz</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <img src="/images/icons/location.png" alt="Adresa" />
+            </div>
+            <div class="contact-text">
+              <p><strong>Adresa:</strong></p>
+              <p>TechNova s.r.o., Technologická 12, Praha 4</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <img src="/images/icons/clock2.png" alt="Otevírací doba" />
+            </div>
+            <div class="contact-text">
+              <p><strong>Otevírací doba:</strong></p>
+              <p>Po-Pá: 8:00-17:00</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="formular.html" class="btn">Napsat zprávu</a>
+      </section>
+    </main>
+      <footer class="footer-text">
+        <p>&copy; 2025 TechNova. Všechna práva vyhrazena.</p>
+      </footer>
+    </div>
+  </div>
 
   <script type="module" src="/src/scripts/main.js"></script>
 </body>

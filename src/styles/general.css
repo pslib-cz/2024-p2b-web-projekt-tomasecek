@@ -12,6 +12,7 @@
   --clr-lighter-text:#19191a;
   --clr-lighter:#ffffff;
   --clr-swiper:#ffffff;
+  --clr-text-hover:#4d4a4a;
 
   --radius: 1rem;
   --section-padding: 3rem 1rem;
@@ -35,6 +36,7 @@
   --clr-lighter:#373838ab;
   --clr-lighter-text:#19191a;
   --clr-swiper:#b2b2be18;
+  --clr-text-hover:#554e4e;
 
 
   --radius: 1rem;
@@ -67,9 +69,9 @@ body {
 
 
 .page-wrapper, .page-content {
-  flex: 1 0 auto;
   display: flex;
   flex-direction: column;
+  padding-bottom: 3rem;
 }
 
 

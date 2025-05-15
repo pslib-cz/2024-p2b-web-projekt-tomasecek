@@ -3,15 +3,6 @@
     gap: 1.5rem;
   }
 
-  .nav-links a {
-    color: var( --clr-lighter-textr);
-    text-decoration: none;
-    font-weight: bold;
-  }
-
-  .nav-links a:hover {
-    color: var(--clr-white);
-  }
 
 .off-screen-menu {
     background-color: var(--clr-primary-dark);
