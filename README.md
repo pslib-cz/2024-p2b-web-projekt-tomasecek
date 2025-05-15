@@ -1,7 +1,7 @@
 
 # 🖥️ 2024 - Webový Projekt | P2B | 
 
-Tento projekt vznikl v rámci školního předmětu **Programování 2B (P2B)** na **PSLib Liberec**. Cílem bylo vytvořit responzivní vícestránkový web dle vlastního grafického návrhu.
+Tento projekt vznikl v rámci školního předmětu **Webové aplikace (P2B)** na **PSLib Liberec**. Cílem bylo vytvořit responzivní vícestránkový web dle vlastního grafického návrhu.
 
 ## 🧩 Funkce a požadavky
 
