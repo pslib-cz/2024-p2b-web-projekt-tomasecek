@@ -1,3 +1,20 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-content {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
 .services-page-container {
   display: grid; 
   grid-template-columns: 1fr; 
@@ -15,16 +32,16 @@
   margin-top: 4rem;
   background-color: var(--clr-lighter);
   border-radius: var(--radius);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: transform var(--transition), box-shadow var(--transition);
   cursor: pointer;
   gap: 1rem;
   width: 100%;
   max-width: 400px;
   box-sizing: border-box;
+  border: 2px solid var(--clr-primary);
 }
 
-.services-page-card h3 {
+.services-page-card h2 {
   font-size: 1.2rem;
   font-weight: bold;
   color: var(--clr-primary);
@@ -50,16 +67,9 @@
   transform: scale(1);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1440px) {
   .services-page-container {
-    grid-template-columns: repeat(2, 1fr); /* Dva sloupce na tabletu */
-    gap: 2rem; /* Mezera mezi kartami */
-  }
-}
-
-@media (min-width: 1024px) {
-  .services-page-container {
-    grid-template-columns: repeat(2, 1fr); /* Tři sloupce na desktopu */
-    gap: 2rem; /* Mezera mezi kartami */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem; 
   }
 }
