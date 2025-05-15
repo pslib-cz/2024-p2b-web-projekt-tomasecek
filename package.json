@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "depv": "vite",
+    "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
     "deploy": "vite build --base=/2024-p2b-web-projekt-tomasecek/ && gh-pages -d dist -o origin"
