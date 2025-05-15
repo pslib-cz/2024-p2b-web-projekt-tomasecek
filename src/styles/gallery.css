@@ -3,6 +3,7 @@
   background-color: var(--clr-primary);
   border-radius: var(--radius);
   margin: 1rem;
+  margin-top: 125rem;
 }
 
 .gallery-title {
@@ -17,32 +18,5 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
-}
-.gallery-item {
-  display: block;
-  overflow: hidden;
-  border-radius: var(--radius);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transition: transform var(--transition), box-shadow var(--transition);
-}
 
-.gallery-item img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-}
-
-.gallery-item:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-.lg-backdrop {
-  z-index: 998; /* Ujistěte se, že backdrop má vyšší z-index než ostatní prvky */
-}
-
-.lg-backdrop + .ham-menu,
-.lg-backdrop ~ .ham-menu {
-  display: none; /* Skryje hamburger menu při otevření LightGallery */
 }

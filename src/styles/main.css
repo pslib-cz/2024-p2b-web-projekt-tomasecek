@@ -60,7 +60,7 @@
 }
 
 .swiper-slide {
-  background-color: var(--clr-light);
+  background-color: var(--clr-lighter);
   border-radius: var(--radius);
   padding: 1.5rem;
   text-align: center;
@@ -270,7 +270,7 @@
   .page-wrapper {
     padding-left: 250px; 
     padding-right: 250px;
-    background-color: var(--clr-wrapper); 
+    background-color: var(--clr-wrapper);
   }
 
 .page-content, main {
@@ -320,7 +320,7 @@
   height: auto; 
 }
 .swiper-slide {
-  background-color: var(--clr-white);
+  background-color: var(--clr-swiper);
   border-radius: 1rem;
   padding: 2rem;
   text-align: left;

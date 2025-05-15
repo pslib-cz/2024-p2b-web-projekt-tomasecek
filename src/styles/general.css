@@ -9,6 +9,9 @@
   --clr-footer:#121212;
   --clr-primary-text:#ffffff;
   --clr-wrapper:rgba(0, 85, 212, 0.5);
+  --clr-lighter-text:#19191a;
+  --clr-lighter:#ffffff;
+  --clr-swiper:#ffffff;
 
   --radius: 1rem;
   --section-padding: 3rem 1rem;
@@ -29,6 +32,9 @@
   --clr-footer:#93C5FD;
   --clr-primary-text:#2C72B8;
   --clr-wrapper:rgba(43, 74, 121, 0.5);
+  --clr-lighter:#373838ab;
+  --clr-lighter-text:#19191a;
+  --clr-swiper:#b2b2be18;
 }
 
 

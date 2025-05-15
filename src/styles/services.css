@@ -1,9 +1,9 @@
 .services-page-container {
-  display: grid; /* Použití grid layoutu */
-  grid-template-columns: 1fr; /* Jeden sloupec na mobilu */
-  gap: 2rem; /* Mezera mezi kartami */
+  display: grid; 
+  grid-template-columns: 1fr; 
+  gap: 2rem;
   align-items: center;
-  justify-items: center; /* Zarovnání karet na střed */
+  justify-items: center;
 }
 
 .services-page-card {
@@ -13,7 +13,7 @@
   text-align: left;
   padding: 1.5rem;
   margin-top: 4rem;
-  background-color: var(--clr-light);
+  background-color: var(--clr-lighter);
   border-radius: var(--radius);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: transform var(--transition), box-shadow var(--transition);

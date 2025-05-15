@@ -10,11 +10,13 @@ footer {
     display: flex; 
     justify-content: center; 
     align-items: center; 
+    margin-bottom: 0;
   }
   
   .footer-text {
     color: var(--clr-footer); 
     font-size: 1rem; 
+
   }
 
   
