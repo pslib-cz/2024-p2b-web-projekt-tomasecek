@@ -3,91 +3,106 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TechNova</title>
-
-
+  <title>Služby | TechNova</title>
+
   <script type="module" crossorigin src="/2024-p2b-web-projekt-tomasecek/assets/modulepreload-polyfill-B5Qt9EMX.js"></script>
   <script type="module" crossorigin src="/2024-p2b-web-projekt-tomasecek/assets/main-C2xELGOT.js"></script>
   <link rel="stylesheet" crossorigin href="/2024-p2b-web-projekt-tomasecek/assets/main-D1voI5pC.css">
-  <link rel="stylesheet" crossorigin href="/2024-p2b-web-projekt-tomasecek/assets/general-JPvxb-0c.css">
-  <link rel="stylesheet" crossorigin href="/2024-p2b-web-projekt-tomasecek/assets/header-B-fzei0m.css">
-  <link rel="stylesheet" crossorigin href="/2024-p2b-web-projekt-tomasecek/assets/hamburger-DXCJ9GXw.css">
-  <link rel="stylesheet" crossorigin href="/2024-p2b-web-projekt-tomasecek/assets/main-B7XsPsR7.css">
-  <link rel="stylesheet" crossorigin href="/2024-p2b-web-projekt-tomasecek/assets/footer-_i2T6GQ7.css">
+  <link rel="stylesheet" crossorigin href="/2024-p2b-web-projekt-tomasecek/assets/general-DhRFDX-l.css">
+  <link rel="stylesheet" crossorigin href="/2024-p2b-web-projekt-tomasecek/assets/header-BDwSOCP4.css">
+  <link rel="stylesheet" crossorigin href="/2024-p2b-web-projekt-tomasecek/assets/hamburger-CJGiLBhg.css">
+  <link rel="stylesheet" crossorigin href="/2024-p2b-web-projekt-tomasecek/assets/main-CiWUuyXy.css">
+  <link rel="stylesheet" crossorigin href="/2024-p2b-web-projekt-tomasecek/assets/footer-DlvT1cJe.css">
+  <link rel="stylesheet" crossorigin href="/2024-p2b-web-projekt-tomasecek/assets/services-DGwSlN-O.css">
 </head>
 
 <body>
-  <header>
-    <div class="off-screen-menu">
-      <ul>
-        <li><a href="./index.html">Domů</a></li>
-        <li><a href="./sluzby.html">Služby</a></li>
-        <li><a href="./o-nas.html">O nás</a></li>
-        <li><a href="./gallery.html">Galerie</a></li>
-        <li><a href="./kontakt.html">Kontakt</a></li>
-        <div class="theme-toggle-wrapper">
-          <li class="theme-toggle-container">
-            <label class="theme-toggle">
-              <input type="checkbox" id="themeToggle" />
+  <div class="page-wrapper">
+    <div class="page-content">
+      <header>
+        <div class="off-screen-menu">
+          <ul>
+            <li><a href="./index.html">Domů</a></li>
+            <li><a href="./sluzby.html">Služby</a></li>
+            <li><a href="./o-nas.html">O nás</a></li>
+            <li><a href="./gallery.html">Galerie</a></li>
+            <li><a href="./kontakt.html">Kontakt</a></li>
+            <li class="theme-toggle-container">
+              <label class="theme-toggle">
+                <input type="checkbox" id="themeToggle">
+                <span class="slider">
+                  <img src="/2024-p2b-web-projekt-tomasecek/images/icons/sun.svg" alt="Light mode" class="icon sun" />
+                  <img src="/2024-p2b-web-projekt-tomasecek/images/icons/moon-fill.svg" alt="Dark mode" class="icon moon" />
+                </span>
+              </label>
+            </li>
+          </ul>
+        </div>
+
+        <nav>
+          <a href="./index.html" class="logo">TechNova</a>
+          <div class="nav-links">
+            <a href="./index.html">Domů</a>
+            <a href="./sluzby.html">Služby</a>
+            <a href="./o-nas.html">O nás</a>
+            <a href="./gallery.html">Galerie</a>
+            <a href="./kontakt.html">Kontakt</a>
+          </div>
+          <div class="theme-toggle-container-desktop">
+            <label class="theme-toggle-desktop">
+              <input type="checkbox" id="themeToggle-desktop">
               <span class="slider">
                 <img src="/2024-p2b-web-projekt-tomasecek/images/icons/sun.svg" alt="Light mode" class="icon sun" />
                 <img src="/2024-p2b-web-projekt-tomasecek/images/icons/moon-fill.svg" alt="Dark mode" class="icon moon" />
               </span>
             </label>
-          </li>
-        </div>
-      </ul>
+          </div>
+          <div class="ham-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <section class="services-box">
+          <h2 class="services-box-title">Naše služby</h2>
+            <div class="services-box-grid">
+              <div class="services-box-card" onclick="window.location.href='./kontakt.html'" style="cursor:pointer;">
+                <img src="/2024-p2b-web-projekt-tomasecek/images/icons/sphere.png" alt="Webové aplikace">
+                <div>
+                  <h3>Webové aplikace</h3>
+                  <p>Vývoj bezpečných webových řešení</p>
+                </div>
+              </div>
+              <div class="services-box-card" onclick="window.location.href='./kontakt.html'" style="cursor:pointer;">
+                <img src="/2024-p2b-web-projekt-tomasecek/images/icons/cloud-upload.png" alt="Cloud & Hosting">
+                <div>
+                  <h3>Cloud & Hosting</h3>
+                  <p>Kompletní návrh a správa firemních sítí</p>
+                </div>
+              </div>
+              <div class="services-box-card" onclick="window.location.href='./kontakt.html'" style="cursor:pointer;">
+                <img src="/2024-p2b-web-projekt-tomasecek/images/icons/tools.png" alt="Správa sítí">
+                <div>
+                  <h3>Správa sítí</h3>
+                  <p>Optimalizace cloudu pro Vaše podnikání</p>
+                </div>
+              </div>
+              <div class="services-box-card" onclick="window.location.href='./kontakt.html'" style="cursor:pointer;">
+                <img src="/2024-p2b-web-projekt-tomasecek/images/icons/bubble.png" alt="IT poradenství">
+                <div>
+                  <h3>IT poradenství</h3>
+                  <p>Strategické a technologické konzultace</p>
+                </div>
+              </div>
+            </div>
+        </section>
+      </main>
     </div>
-
-    <nav>
-      <div class="logo">TechNova</div>
-      <div class="ham-menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </nav>
-  </header>
-<main>
-  <section class="services-page">
-    <h2 class="services-page-h2">Naše služby</h2>
-      <div class="services-page-container">
-        <a href="kontakt.html" class="services-page-card">
-          <div class="services-page-icon">
-            <img src="/2024-p2b-web-projekt-tomasecek/images/icons/sphere.png" alt="Webové aplikace">
-          </div>
-          <h3>Webové aplikace</h3>
-          <p>Vývoj bezpečných webových řešení</p>
-        </a>
-        <a href="kontakt.html" class="services-page-card">
-          <div class="services-page-icon">
-            <img src="/2024-p2b-web-projekt-tomasecek/images/icons/tools.png" alt="Správa sítí">
-          </div>
-          <h3>Správa sítí</h3>
-          <p>Optimalizace a správa firemních sítí</p>
-        </a>
-        <a href="kontakt.html" class="services-page-card">
-          <div class="services-page-icon">
-            <img src="/2024-p2b-web-projekt-tomasecek/images/icons/cloud-upload.png" alt="Cloud & Hosting">
-          </div>
-          <h3>Cloud & Hosting</h3>
-          <p>Kompletní návrh a správa cloudových řešení</p>
-        </a>
-        <a href="kontakt.html" class="services-page-card">
-          <div class="services-page-icon">
-            <img src="/2024-p2b-web-projekt-tomasecek/images/icons/bubble.png" alt="IT Poradenství">
-          </div>
-          <h3>IT poradenství</h3>
-          <p>Strategické a technologické konzultace</p>
-        </a>
-      </div>
-    </div>
-  </section>
-</main>
-
-  <footer class="footer-text">
-    <p>&copy; 2025 TechNova. Všechna práva vyhrazena.</p>
-  </footer>
-
+    <footer class="footer-text">
+      <p>&copy; 2025 TechNova. Všechna práva vyhrazena.</p>
+    </footer>
+  </div>
 </body>
 </html>
