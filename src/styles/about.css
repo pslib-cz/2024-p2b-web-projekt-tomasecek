@@ -137,3 +137,37 @@
     margin-top: 2.5rem;
   }
 }
+
+@media (min-width: 834px) and (max-width: 1439px) {
+  .about-box {
+    max-width: 40rem;   
+    width: 100%;
+    margin: 0 1rem;
+    padding: 2.2rem 1.2rem;
+    border-radius: 1.2rem;
+  }
+
+  .about-img {
+    width: 15rem;          
+    margin-bottom: 1.2rem;
+  }
+
+  .about-title {
+    font-size: 1.3rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .about-text {
+    font-size: 1rem;
+    max-width: 23rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+  }
+
+  .about-quote {
+    font-size: 0.95rem;
+    margin-top: 1rem;
+    margin-left: 14rem;
+  }
+}

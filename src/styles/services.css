@@ -1,5 +1,5 @@
 .services-box {
-   background: var(--clr-light);
+  background: var(--clr-light);
   border: 2px solid var(--clr-primary);
   border-radius: 12px;
   padding: 3rem 3rem; 
@@ -17,7 +17,7 @@
 .services-box-card {
   background: var(--clr-white);
   border-radius: var(--radius);
-  box-shadow: var(--box-shadow);
+  border: 2px solid var(--clr-primary);
   padding: 3rem 4rem;   
   gap: 1.5rem;               
   transition: box-shadow 0.2s, transform 0.2s;
@@ -80,18 +80,71 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 8rem;
+    margin-bottom: 7rem;
     align-items: center;       
   }
 
 .services-box-card {
   background: var(--clr-white);
   border-radius: var(--radius);
-  box-shadow: var(--box-shadow);
+  border: 2px solid var(--clr-primary);
   padding: 1.5rem 1rem;
   display: flex;
   align-items: flex-start;
   gap: 1rem;
 }
+
+.services-box-card:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+  transform: translateY(-4px) scale(1.03);
+}
+
+.services-box-card img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  margin-top: 0.2rem;
+}
+
+.services-box-card h3 {
+  color: var(--clr-primary);
+  font-size: 1.1rem;
+  margin: 0 0 0.3rem 0;
+}
+
+.services-box-card p {
+  color: var(--clr-text);
+  font-size: 1rem;
+  margin: 0;
+}
+}
+
+@media (min-width: 834px) and (max-width: 1439px) {
+
+  .services-box {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 8rem;
+    margin-bottom: 7rem;
+    align-items: center;
+    max-width: 100%;         
+    box-sizing: border-box;   
+    overflow: hidden;          
+  }
+
+  .services-box-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    width: 100%;              
+    box-sizing: border-box;
+  }
+
+  .services-box-card {
+    max-width: 100%;         
+    min-width: 0;           
+    box-sizing: border-box;
+    word-break: break-word;
+  }
 
 .services-box-card:hover {
   box-shadow: 0 8px 24px rgba(0,0,0,0.18);
