@@ -206,10 +206,19 @@
   padding: 2rem;
   border-radius: var(--radius);
   box-shadow: var(--box-shadow);
-  max-width: 400px; 
-  margin: 1rem;
-  border: 2px solid var(--clr-primary); 
-  margin-bottom: 4rem;
+  max-width: 400px;
+  width: calc(100% - 2rem);      
+  margin: 1rem auto 4rem auto;  
+  border: 2px solid var(--clr-primary);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  text-align: left;
+  padding-bottom: 4.5rem;
+  overflow: hidden;
 }
 
 .about-inner {
@@ -246,7 +255,16 @@
   text-align: center;
   float: right; 
   margin-top: -2.5rem;
-
+  margin-top: 1.5rem;
+  align-self: center;
+  position: absolute;
+  left: 50%;
+  bottom: 1.5rem;
+  transform: translateX(-50%);
+  width: max-content;
+  max-width: 90%;
+  white-space: normal;
+  z-index: 2;
 }
 
 .o-nas-btn:hover {
@@ -391,6 +409,8 @@
   min-width: 100%;
   height: 80%;
   text-align: left; 
+  padding-bottom: 4.5rem; /* přidá místo dole pro tlačítko */
+  overflow: hidden;
 }
 
 .about h2 {
@@ -419,7 +439,16 @@
   transition: var(--transition);
   text-align: center;
   margin-top: auto; 
-  
+  margin-top: 1.5rem;
+  align-self: center;
+  position: absolute;
+  left: 50%;
+  bottom: 1.5rem;
+  transform: translateX(-50%);
+  width: max-content;
+  max-width: 90%;
+  white-space: normal;
+  z-index: 2;
 }
 }
 
