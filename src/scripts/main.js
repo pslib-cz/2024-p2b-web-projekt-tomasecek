@@ -4,6 +4,7 @@ import lightGallery from 'lightgallery';
 import 'lightgallery/css/lightgallery.css';
 
 document.addEventListener('DOMContentLoaded', () => {
+  // Swiper
   const swiper = new Swiper('.swiper', {
     slidesPerView: 1,
     centeredSlides: true,
@@ -14,39 +15,17 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   });
 
+  // Hamburger menu
   const hamMenu = document.querySelector(".ham-menu");
   const offScreenMenu = document.querySelector(".off-screen-menu");
-  const themeToggleMobile = document.getElementById('themeToggle');
-  const themeToggleDesktop = document.getElementById('themeToggle-desktop');
 
   if (hamMenu) {
     hamMenu.addEventListener("click", () => {
       hamMenu.classList.toggle("active");
       offScreenMenu?.classList.toggle("active");
-
       document.body.style.overflow = offScreenMenu?.classList.contains("active") ? "hidden" : "";
     });
   }
-
-  document.addEventListener("DOMContentLoaded", () => {
-    const form = document.getElementById("contactForm");
-
-    form.addEventListener("submit", (event) => {
-      event.preventDefault(); 
-
-
-      const name = document.getElementById("name").value.trim();
-      const email = document.getElementById("email").value.trim();
-      const message = document.getElementById("message").value.trim();
-
-      if (name === "" || email === "" || message === "") {
-        alert("Vyplňte prosím všechny kolonky.");
-      } else {
-
-        form.innerHTML = "<p class='success-message'>Úspěšně odesláno!</p>";
-      }
-    });
-  });
 
   offScreenMenu?.querySelectorAll("a").forEach(link => {
     link.addEventListener("click", () => {
@@ -56,6 +35,36 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // Formulář
+  const form = document.getElementById("mainForm");
+  const formTitle = document.querySelector(".form-title");
+
+  if (form) {
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      const name = form["main-name"].value.trim();
+      const email = form["main-email"].value.trim();
+      const message = form["main-message"].value.trim();
+
+      if (name === "" || email === "" || message === "") {
+        alert("Vyplňte prosím všechny kolonky.");
+      } else {
+        if (formTitle) {
+          formTitle.style.display = "none";
+        }
+
+        form.innerHTML = `
+          <div class="success-message-wrapper">
+            <p class="success-message">Zpráva byla úspěšně odeslána!</p>
+            <a href="index.html" class="back-home-btn">Domů</a>
+          </div>
+        `;
+      }
+    });
+  }
+
+  // Galerie (lightGallery)
   const galleryContainer = document.querySelector(".gallery-container");
   if (galleryContainer) {
     const lightGalleryInstance = lightGallery(galleryContainer, {
@@ -63,7 +72,6 @@ document.addEventListener('DOMContentLoaded', () => {
       download: false,
       speed: 500,
     });
-
 
     lightGalleryInstance.on("lgBeforeOpen", () => {
       if (hamMenu) {
@@ -80,37 +88,38 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Dark / Light režim
+  const themeToggleMobile = document.getElementById('themeToggle');
+  const themeToggleDesktop = document.getElementById('themeToggle-desktop');
+
   const savedTheme = localStorage.getItem('theme');
   if (savedTheme === 'dark') {
     document.documentElement.setAttribute('data-theme', 'dark');
-    themeToggleMobile.checked = true;
-    themeToggleDesktop.checked = true;
+    if (themeToggleMobile) themeToggleMobile.checked = true;
+    if (themeToggleDesktop) themeToggleDesktop.checked = true;
   }
 
-  // Přepínání tématu na mobilu
-  themeToggleMobile.addEventListener('change', () => {
+  themeToggleMobile?.addEventListener('change', () => {
     if (themeToggleMobile.checked) {
       document.documentElement.setAttribute('data-theme', 'dark');
       localStorage.setItem('theme', 'dark');
-      themeToggleDesktop.checked = true; // Synchronizace s desktopovým tlačítkem
+      if (themeToggleDesktop) themeToggleDesktop.checked = true;
     } else {
       document.documentElement.setAttribute('data-theme', 'light');
       localStorage.setItem('theme', 'light');
-      themeToggleDesktop.checked = false; // Synchronizace s desktopovým tlačítkem
+      if (themeToggleDesktop) themeToggleDesktop.checked = false;
     }
   });
 
-  // Přepínání tématu na desktopu
-  themeToggleDesktop.addEventListener('change', () => {
+  themeToggleDesktop?.addEventListener('change', () => {
     if (themeToggleDesktop.checked) {
       document.documentElement.setAttribute('data-theme', 'dark');
       localStorage.setItem('theme', 'dark');
-      themeToggleMobile.checked = true; // Synchronizace s mobilním tlačítkem
+      if (themeToggleMobile) themeToggleMobile.checked = true;
     } else {
       document.documentElement.setAttribute('data-theme', 'light');
       localStorage.setItem('theme', 'light');
-      themeToggleMobile.checked = false; // Synchronizace s mobilním tlačítkem
+      if (themeToggleMobile) themeToggleMobile.checked = false;
     }
   });
 });
-

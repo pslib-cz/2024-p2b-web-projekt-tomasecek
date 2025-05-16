@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="/src/styles/general.css" />
   <link rel="stylesheet" href="/src/styles/header.css" />
   <link rel="stylesheet" href="/src/styles/hamburger.css" />
-  <link rel="stylesheet" href="/src/styles/contact.css" />
+  <link rel="stylesheet" href="/src/styles/formular.css" />
   <link rel="stylesheet" href="/src/styles/footer.css" />
 </head>
 
@@ -46,18 +46,18 @@
   </header>
 
 <main>
-  <section class="contact">
-    <h1 class="contact-title">Kontaktujte nás</h1>
-    <form id="contactForm" class="contact-form">
+  <section class="form-section">
+    <h1 class="form-title">Napište nám</h1>
+    <form id="mainForm" class="main-form">
       <div class="form-group">
-        <label for="name"></label>
-        <input type="text" id="name" name="name" placeholder="Vaše jméno" required />
+        <label for="main-name"></label>
+        <input type="text" id="main-name" name="main-name" placeholder="Vaše jméno" required />
       </div>
       <div class="form-group">
-        <input type="email" id="email" name="email" placeholder="Váš email" required />
+        <input type="email" id="main-email" name="main-email" placeholder="Váš email" required />
       </div>
       <div class="form-group">
-        <textarea id="message" name="message" placeholder="Napište svou zprávu" rows="5" required></textarea>
+        <textarea id="main-message" name="main-message" placeholder="Napište svou zprávu" rows="5" required></textarea>
       </div>
       <button type="submit" class="btn">Odeslat</button>
     </form>
