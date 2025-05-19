@@ -67,20 +67,20 @@ document.addEventListener('DOMContentLoaded', () => {
   // Galerie (lightGallery)
   const galleryContainer = document.querySelector(".gallery-container");
   if (galleryContainer) {
-    const lightGalleryInstance = lightGallery(galleryContainer, {
+    lightGallery(galleryContainer, {
       selector: ".gallery-item",
       download: false,
       speed: 500,
     });
 
-    lightGalleryInstance.on("lgBeforeOpen", () => {
+    galleryContainer.addEventListener("lgBeforeOpen", () => {
       if (hamMenu) {
         hamMenu.style.visibility = "hidden";
         hamMenu.style.zIndex = "-1";
       }
     });
 
-    lightGalleryInstance.on("lgAfterClose", () => {
+    galleryContainer.addEventListener("lgAfterClose", () => {
       if (hamMenu) {
         hamMenu.style.visibility = "visible";
         hamMenu.style.zIndex = "";
