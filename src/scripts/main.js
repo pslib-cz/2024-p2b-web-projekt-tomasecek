@@ -4,7 +4,7 @@ import lightGallery from 'lightgallery';
 import 'lightgallery/css/lightgallery.css';
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Swiper
+
   const swiper = new Swiper('.swiper', {
     slidesPerView: 1,
     centeredSlides: true,
@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   });
 
-  // Hamburger menu
   const hamMenu = document.querySelector(".ham-menu");
   const offScreenMenu = document.querySelector(".off-screen-menu");
 
@@ -35,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Formulář
+
   const form = document.getElementById("mainForm");
   const formTitle = document.querySelector(".form-title");
 
@@ -64,7 +63,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Galerie (lightGallery)
   const galleryContainer = document.querySelector(".gallery-container");
   if (galleryContainer) {
     lightGallery(galleryContainer, {
@@ -88,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Dark / Light režim
+
   const themeToggleMobile = document.getElementById('themeToggle');
   const themeToggleDesktop = document.getElementById('themeToggle-desktop');
 

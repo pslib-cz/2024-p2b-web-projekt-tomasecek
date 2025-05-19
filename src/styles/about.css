@@ -4,7 +4,7 @@
   justify-content: center;
   margin-top: 6rem;
   padding: 1.5rem 0;
-  min-height: calc(100vh - 7rem - 5rem); 
+  min-height: calc(100vh - 7rem - 5rem);
   box-sizing: border-box;
 }
 
@@ -13,7 +13,7 @@
   border-radius: var(--radius);
   padding: 2rem 1rem;
   max-width: 22rem;
-  width: calc(100% - 2rem); 
+  width: calc(100% - 2rem);
   margin: 0 1rem;
   display: flex;
   flex-direction: column;
@@ -94,9 +94,7 @@
   border-right: 0.7rem solid var(--clr-primary);
 }
 
-
-
-@media (min-width: 1440px) {
+@media (min-width: 90rem) {
   .about-section {
     min-height: 86vh;
     margin-top: 4rem;
@@ -107,15 +105,15 @@
   }
 
   .about-box {
-    max-width: 48rem;        
+    max-width: 48rem;
     width: 100%;
     margin: 0 2rem;
-    padding: 3.5rem 3rem;  
+    padding: 3.5rem 3rem;
     border-radius: 1.2rem;
   }
 
   .about-img {
-    width: 18rem;          
+    width: 18rem;
     margin-bottom: 2rem;
   }
 
@@ -126,7 +124,7 @@
 
   .about-text {
     font-size: 1.15rem;
-    max-width: 32rem;         
+    max-width: 32rem;
     margin-left: 0;
     margin-right: 0;
     padding-left: 0;
@@ -138,9 +136,9 @@
   }
 }
 
-@media (min-width: 834px) and (max-width: 1439px) {
+@media (min-width: 52.125rem) and (max-width: 89.9375rem) {
   .about-box {
-    max-width: 40rem;   
+    max-width: 40rem;
     width: 100%;
     margin: 0 1rem;
     padding: 2.2rem 1.2rem;
@@ -148,7 +146,7 @@
   }
 
   .about-img {
-    width: 15rem;          
+    width: 15rem;
     margin-bottom: 1.2rem;
   }
 

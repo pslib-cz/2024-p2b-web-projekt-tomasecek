@@ -2,8 +2,8 @@
   background: var(--clr-primary);
   border-radius: var(--radius);
   padding: 2rem;
-  max-width: 1000px;         
-  margin: 6rem auto 2rem auto;  
+  max-width: 62.5rem;
+  margin: 6rem auto 2rem auto;
   box-shadow: var(--box-shadow);
   margin-left: 1rem;
   margin-right: 1rem;
@@ -26,9 +26,9 @@
 
 .gallery-item img {
   width: 100%;
-  max-width: 16rem;   
+  max-width: 16rem;
   height: auto;
-  aspect-ratio: 16/10; 
+  aspect-ratio: 16/10;
   object-fit: cover;
   border-radius: 0.5rem;
   box-shadow: var(--box-shadow);
@@ -39,18 +39,18 @@
 
 .gallery-item img:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15); 
+  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.15);
 }
 
-@media (min-width: 834px) and (max-width: 1439px) {
-  .gallery{
+@media (min-width: 52.125rem) and (max-width: 89.9375rem) {
+  .gallery {
     margin-left: auto;
     margin-right: auto;
   }
 }
 
-@media (min-width: 1439px) {
-  .gallery{
+@media (min-width: 89.9375rem) {
+  .gallery {
     margin-left: auto;
     margin-right: auto;
   }

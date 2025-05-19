@@ -58,7 +58,7 @@
 
 .swiper {
   width: 100%;
-  max-width: 360px;
+  max-width: 22.5rem;
   margin: 0 auto;
 }
 
@@ -67,11 +67,11 @@
   border-radius: var(--radius);
   padding: 1.5rem;
   text-align: center;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.05);
 }
 
 .benefit-card img {
-  width: 40px;
+  width: 2.5rem;
   margin-bottom: 0.5rem;
 }
 
@@ -80,20 +80,20 @@
   border-radius: 1rem;
   padding: 0.5rem;
   text-align: left;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
-  border: 2px solid transparent;
+  border: 0.125rem solid transparent;
 }
 
 .swiper-slide-active {
-  border: 2px solid var(--clr-primary);
+  border: 0.125rem solid var(--clr-primary);
 }
-
 
 .benefit-card img {
-  width: 16px;
+  width: 1rem;
   margin-right: 0.5rem;
 }
+
 
 .benefit-card h3 img {
   width: 1.5rem;
@@ -115,13 +115,13 @@
 
 
 .why-us-container {
-  border: 2px solid var(--clr-primary);
+  border: 0.125rem solid var(--clr-primary);
   border-radius: 1rem;
   padding: 1.5rem 1rem;
   background-color: var(--clr-white);
   margin: 1rem;
-  max-width: 400px;
-  box-shadow: 0 2px 8px rgba(0, 85, 212, 0.05);
+  max-width: 25rem;
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 85, 212, 0.05);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -129,6 +129,7 @@
   text-align: left;
   position: relative;
 }
+
 
 
 
@@ -154,13 +155,13 @@
 
 
 .services {
-  background-color: var(--clr-primary); 
-  color: var(--clr-light); 
-  padding: 2rem; 
-  border-radius: var(--radius); 
-  max-width: 400px; 
+  background-color: var(--clr-primary);
+  color: var(--clr-light);
+  padding: 2rem;
+  border-radius: var(--radius);
+  max-width: 25rem;
   margin: 1rem;
-  overflow: hidden;   
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -168,6 +169,7 @@
   text-align: left;
   position: relative;
 }
+
 
 .services-h2 {
   font-size: 1.6rem;
@@ -221,10 +223,10 @@
   padding: 2rem;
   border-radius: var(--radius);
   box-shadow: var(--box-shadow);
-  max-width: 400px;
-  width: calc(100% - 2rem);      
-  margin: 1rem auto 4rem auto;  
-  border: 2px solid var(--clr-primary);
+  max-width: 25rem;
+  width: calc(100% - 2rem);
+  margin: 1rem auto 4rem auto;
+  border: 0.125rem solid var(--clr-primary);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -235,6 +237,7 @@
   padding-bottom: 4.5rem;
   overflow: hidden;
 }
+
 
 .about-inner {
   display: flex;
@@ -295,16 +298,17 @@
     display: none;
   }
 
-@media (min-width: 1439px) {
+@media (min-width: 89.9375rem) {
 
-  .about-image{
-    display: none;
-  }
-  .page-wrapper {
-    padding-left: 250px; 
-    padding-right: 250px;
-    background-color: var(--clr-wrapper);
-  }
+.about-image {
+  display: none;
+}
+
+.page-wrapper {
+  padding-left: 15.625rem;
+  padding-right: 15.625rem;
+  background-color: var(--clr-wrapper);
+}
 
 .page-content, main {
   padding-top: 0.8em; 
@@ -322,22 +326,22 @@
   grid-template-columns: 1fr 1fr;
   grid-template-areas: 
     "why-us-container person-pc-image";
-  gap: 1rem; 
+  gap: 1rem;
   align-items: stretch;
-  margin: 2rem auto; 
-  max-width: 1200px; 
+  margin: 2rem auto;
+  max-width: 75rem;
 }
 
 .why-us-container {
-  grid-area: why-us-container; 
-  border: 2px solid var(--clr-primary);
+  grid-area: why-us-container;
+  border: 0.125rem solid var(--clr-primary);
   border-radius: var(--radius);
-  padding: 2rem 1.5rem; 
+  padding: 2rem 1.5rem;
   background-color: var(--clr-white);
-  box-shadow: 0 2px 8px rgba(0, 85, 212, 0.05);
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 85, 212, 0.05);
   display: flex;
-  flex-direction: column; 
-  justify-content: space-between; 
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .about-image-desktop {
@@ -349,21 +353,23 @@
 
 .about-image-desktop img {
   width: 100%;
-  max-width: 400px; 
-  height: auto; 
+  max-width: 25rem;
+  height: auto;
 }
+
 .swiper-slide {
   background-color: var(--clr-swiper);
   border-radius: 1rem;
   padding: 2rem;
   text-align: left;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  border: 2px solid var(--clr-primary);
-  width: 100%; 
-  max-width: 500px; 
-  height: auto; 
+  border: 0.125rem solid var(--clr-primary);
+  width: 100%;
+  max-width: 31.25rem;
+  height: auto;
 }
+
 
 .swiper-slide img {
   width: 3.1rem; 
@@ -385,50 +391,52 @@
 
 .services-about-section {
   display: grid;
-  grid-template-columns: 1fr 1fr; 
-  grid-template-areas: 
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
     "services about";
-  gap: 2rem; 
-  max-width: 1200px; 
+  gap: 2rem;
+  max-width: 75rem;
   margin: auto;
-  margin-bottom: 3rem; 
+  margin-bottom: 1.875rem;
 }
 
 .services {
-  grid-area: services; 
-  border: 2px solid var(--clr-primary);
+  grid-area: services;
+  border: 0.125rem solid var(--clr-primary);
   border-radius: var(--radius);
   padding: 2rem;
   background-color: var(--clr-primary);
   color: var(--clr-light);
-  box-shadow: 0 2px 8px rgba(0, 85, 212, 0.05);
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 85, 212, 0.05);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-left: 1rem; 
+  margin-left: 1rem;
 }
 
+
 .about {
-  grid-area: about; 
+  grid-area: about;
   justify-self: end;
-  border: 2px solid var(--clr-primary);
+  border: 0.125rem solid var(--clr-primary);
   border-radius: var(--radius);
   padding: 2rem;
   background-color: var(--clr-light);
-  box-shadow: 0 2px 8px rgba(0, 85, 212, 0.05);
-  display: flex; 
-  flex-direction: column; 
-  justify-content: space-between; 
-  align-items: center; 
-  margin-right: 1rem; 
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 85, 212, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 1rem;
   min-width: 100%;
   height: 80%;
-  text-align: left; 
-  padding-bottom: 4.5rem; 
+  text-align: left;
+  padding-bottom: 4.5rem;
   overflow: hidden;
   margin-left: 1rem;
   margin-right: 1rem;
 }
+
 
 .about h2 {
   font-size: 1.5rem;
@@ -473,7 +481,7 @@
   background-color: var(--clr-primary-dark);
 }
 
-@media (min-width: 834px) and (max-width: 1439px) {
+@media (min-width: 52.125rem) and (max-width: 89.9375rem) {
 
   .main-grid,
   .page-content,
@@ -520,7 +528,7 @@
     grid-template-areas: "why-us-container person-pc-image";
     gap: 1rem;
     margin: 1rem auto;
-    max-width: 900px;
+    max-width: 56.25rem;
   }
 
   .why-us-container {
@@ -555,19 +563,20 @@
     align-items: center;
   }
 
-  .about-image-desktop img {
-    width: 90%;
-    max-width: 280px;
-  }
+.about-image-desktop img {
+  width: 90%;
+  max-width: 17.5rem;
+}
 
-  .services-about-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "services about";
-    gap: 1rem;
-    max-width: 900px;
-    margin: 2rem auto;
-  }
+.services-about-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "services about";
+  gap: 1rem;
+  max-width: 56.25rem;
+  margin: 2rem auto;
+}
+
 
   .services {
     grid-area: services;
