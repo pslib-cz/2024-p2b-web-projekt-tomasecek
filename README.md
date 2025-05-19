@@ -3,12 +3,12 @@
 
 Tento projekt vznikl v rámci školního předmětu **Webové aplikace (P2B)** na **PSLib Liberec**. Cílem bylo vytvořit responzivní vícestránkový web dle vlastního grafického návrhu.
 
-## 🧩 Funkce a požadavky
+## 🧩 Použité funkce/techniky/prvky
 
-- ✅ Vlastní design vytvořený ve Figmě
+- ✅ Návrh ve figmě
 - ✅ Responzivní layout (pro mobil, tablet, desktop)
-- ✅ Minimálně **3 stránky**
-- ✅ Galerie (Swiper.js nebo LightGallery)
+- ✅ Galerie (Swiper.js a LightGallery)
+- ✅ Light/dark mode
 - ✅ Interaktivní formulář
 - ✅ CSS animace
 - ✅ Nasazení na GitHub Pages
