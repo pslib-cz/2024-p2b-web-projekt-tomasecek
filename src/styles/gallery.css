@@ -5,6 +5,8 @@
   max-width: 1000px;         
   margin: 6rem auto 2rem auto;  
   box-shadow: var(--box-shadow);
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .gallery-title {
@@ -19,6 +21,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
   justify-items: center;
+  justify-content: center;
 }
 
 .gallery-item img {
@@ -37,4 +40,18 @@
 .gallery-item img:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15); 
+}
+
+@media (min-width: 834px) and (max-width: 1439px) {
+  .gallery{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 1439px) {
+  .gallery{
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

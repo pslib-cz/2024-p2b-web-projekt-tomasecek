@@ -4,18 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kontakt | TechNova</title>
-  
+  <link rel="icon" type="image/png" href="/images/T.png" />
   <link rel="stylesheet" href="/src/styles/general.css" />
   <link rel="stylesheet" href="/src/styles/header.css" />
   <link rel="stylesheet" href="/src/styles/hamburger.css" />
-  <link rel="stylesheet" href="/src/styles/formular.css" />
-  <link rel="stylesheet" href="/src/styles/footer.css" />
   <link rel="stylesheet" href="/src/styles/main.css" />
-
-  
+  <link rel="stylesheet" href="/src/styles/footer.css" />
+  <link rel="stylesheet" href="/src/styles/contact.css" />
+  <link rel="stylesheet" href="/src/styles/formular.css" />
 </head>
 
 <body>
+  <div class="page-wrapper">
+    <div class="page-content">
 <header>
   <div class="off-screen-menu">
     <ul>
@@ -61,28 +62,29 @@
     </div>
   </nav>
 </header>
-
-<main>
-  <section class="form-section">
-    <h1 class="form-title">Napište nám</h1>
-    <form id="mainForm" class="main-form">
-      <div class="form-group">
-        <label for="main-name"></label>
-        <input type="text" id="main-name" name="main-name" placeholder="Vaše jméno" required />
-      </div>
-      <div class="form-group">
-        <input type="email" id="main-email" name="main-email" placeholder="Váš email" required />
-      </div>
-      <div class="form-group">
-        <textarea id="main-message" name="main-message" placeholder="Napište svou zprávu" rows="5" required></textarea>
-      </div>
-      <button type="submit" class="btn">Odeslat</button>
-    </form>
-  </section>
-</main>
-  <footer class="footer-text">
-    <p>&copy; 2025 TechNova. Všechna práva vyhrazena.</p>
-  </footer>
+    <main>
+      <section class="form-section">
+        <h1 class="form-title">Napište nám</h1>
+        <form id="mainForm" class="main-form">
+          <div class="form-group">
+            <label for="main-name"></label>
+            <input type="text" id="main-name" name="main-name" placeholder="Vaše jméno" required />
+          </div>
+          <div class="form-group">
+            <input type="email" id="main-email" name="main-email" placeholder="Váš email" required />
+          </div>
+          <div class="form-group">
+            <textarea id="main-message" name="main-message" placeholder="Napište svou zprávu" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn">Odeslat</button>
+        </form>
+      </section>
+    </main>
+      <footer class="footer-text">
+        <p>&copy; 2025 TechNova. Všechna práva vyhrazena.</p>
+      </footer>
+    </div>
+  </div>
 
   <script type="module" src="/src/scripts/main.js"></script>
 </body>
