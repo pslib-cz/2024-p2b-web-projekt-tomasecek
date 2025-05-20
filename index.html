@@ -1,92 +1,180 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    
-
-    <link rel="icon" type="image/png" sizes="32x32" href="/2024-p2b-web-projekt-velovam/images/logo-vk-dukla-liberec-900x583.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/2024-p2b-web-projekt-velovam/images/logo-vk-dukla-liberec-900x583.png">
-    <link rel="shortcut icon" href="/2024-p2b-web-projekt-velovam/images/logo-vk-dukla-liberec-900x583.png">
-
-    <meta name="theme-color" content="#F1C40F"> 
-
-    <!-- Primary Meta Tags -->
-    <meta name="title" content="Volejbalový klub Liberec - Síla, vášeň a sportovní týmová práce!">
-    <meta name="description" content="Volejbalový klub Liberec - Oficiální web našeho volejbalového klubu, kde najdete novinky, zápasy a všechno o našem týmu.">
-    
-    <!-- hamburger menu -->
-    <script src="/src/scripts/hamburger.js"></script>
-
-    <title>Dukla | Domů </title>
-  <link rel="stylesheet" crossorigin href="/2024-p2b-web-projekt-velovam/assets/main-D447PzNy.css">
-  <link rel="stylesheet" crossorigin href="/2024-p2b-web-projekt-velovam/assets/typography-CZMtycD-.css">
-  <link rel="stylesheet" crossorigin href="/2024-p2b-web-projekt-velovam/assets/swiper-CkuyXiiK.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Domů | TechNova</title>
+  <link rel="icon" type="image/png" href="/2024-p2b-web-projekt-tomasecek/images/T.png" />
+  <script type="module" crossorigin src="/2024-p2b-web-projekt-tomasecek/assets/modulepreload-polyfill-B5Qt9EMX.js"></script>
+  <script type="module" crossorigin src="/2024-p2b-web-projekt-tomasecek/assets/main-B2DnkuGG.js"></script>
+  <link rel="stylesheet" crossorigin href="/2024-p2b-web-projekt-tomasecek/assets/main-D1voI5pC.css">
+  <link rel="stylesheet" crossorigin href="/2024-p2b-web-projekt-tomasecek/assets/general-BZMkVfsq.css">
+  <link rel="stylesheet" crossorigin href="/2024-p2b-web-projekt-tomasecek/assets/header-DlM6ImWS.css">
+  <link rel="stylesheet" crossorigin href="/2024-p2b-web-projekt-tomasecek/assets/hamburger-DTrlydEL.css">
+  <link rel="stylesheet" crossorigin href="/2024-p2b-web-projekt-tomasecek/assets/main-DNtwf3Qm.css">
+  <link rel="stylesheet" crossorigin href="/2024-p2b-web-projekt-tomasecek/assets/footer-BI-Ed16r.css">
 </head>
+
 <body>
-    <div class="container">
-        <nav class="hamburger__nav">
-            <menu class="hamburger__links__nav">
-                <li><a href="index.html">Domů</a></li>
-                <li><a href="novinky.html">Novinky</a></li>
-                <li><a href="historie.html">Historie</a></li>
-                <li><a href="tymy.html">Týmy</a></li>
-                <li><a href="souteze.html">Soutěže</a></li>
-                <li><a href="galerie.html">Galerie</a></li>
-            </menu>
-        </nav>
+  <div class="page-wrapper">
+    <div class="page-content">
+<header>
+  <div class="off-screen-menu">
+    <ul>
+      <li><a href="./index.html">Domů</a></li>
+      <li><a href="./sluzby.html">Služby</a></li>
+      <li><a href="./o-nas.html">O nás</a></li>
+      <li><a href="./gallery.html">Galerie</a></li>
+      <li><a href="./kontakt.html">Kontakt</a></li>
+      <li class="theme-toggle-container">
+        <label class="theme-toggle">
+          <input type="checkbox" id="themeToggle">
+          <span class="slider">
+            <img src="/2024-p2b-web-projekt-tomasecek/images/icons/sun.svg" alt="Light mode" class="icon sun" />
+            <img src="/2024-p2b-web-projekt-tomasecek/images/icons/moon-fill.svg" alt="Dark mode" class="icon moon" />
+          </span>
+        </label>
+      </li>
+    </ul>
+  </div>
 
-        <header class="body__header">
-            <div class="header__logo logo">
-                <img src="/2024-p2b-web-projekt-velovam/images/logo-vk-dukla-liberec-900x583.png" alt="Dukla Liberec logo" height="28">
-                <a href="/">Dukla<span>Liberec</span></a>
-            </div>
-
-            <div id="hamburger" role="button" class="header__hamburger">
-                <span class="bar1"></span>
-                <span class="bar2"></span>
-                <span class="bar3"></span>
-            </div>
-
-            <menu class="header__navigation">
-                <li class="header__link header__link--active"><a href="/">Domů</a></li>
-                <li class="header__link"><a href="novinky.html">Novinky</a></li>
-                <li class="header__link"><a href="historie.html">Historie</a></li>
-                <li class="header__link"><a href="tymy.html">Týmy</a></li>
-                <li class="header__link"><a href="souteze.html">Soutěže</a></li>
-                <li class="header__link"><a href="galerie.html">Galerie</a></li>
-            </menu>
-        </header>
-
-        <div class="body__main">
-            <div class="main__hero">
-                <h2>DUKLA<span>LIBEREC</span></h2>
-                <p class="hero__description center">Hrdí na své úspěchy!</p>
-            </div>
-
-            <section class="main__text-section">
-                <h1 class="main__text-section__heading center">O nás</h1>
-                <p> Jsme přední český volejbalový klub s bohatou tradicí a řadou úspěchů na domácí i mezinárodní scéně.
-                    Věříme v tvrdou práci, týmového ducha a profesionální přístup, díky kterému se dlouhodobě držíme na špičce českého volejbalu.
-                     VK Dukla Liberec je pro nás víc než jen klub – je to místo, kde spojujeme vášeň pro volejbal s cílem dosahovat těch nejvyšších met.</p>
-            </section>
-        </div>
-
-        <footer class="body__footer">
-            <h3 class="footer__header">Odkazy</h3>
-            <div class="footer__links">
-                <menu class="footer__links__nav">
-                    <li><a href="novinky.html"><i class="fa-solid fa-newspaper"></i> Novinky</a></li>
-                    <li><a href="historie.html"><i class="fa-solid fa-circle-info"></i> Historie</a></li>
-                    <li><a href="tymy.html"><i class="fa-solid fa-people-group"></i> Týmy</a></li>
-                    <li><a href="souteze.html"><i class="fa-solid fa-trophy"></i> Soutěže</a></li>
-                    <li><a href="galerie.html"><i class="fa-solid fa-image"></i> Galerie</a></li>
-                </menu>
-            </div>
-        </footer>
+  <nav>
+    <a href="./index.html" class="logo">TechNova</a>
+    <div class="nav-links">
+      <a href="./index.html">Domů</a>
+      <a href="./sluzby.html">Služby</a>
+      <a href="./o-nas.html">O nás</a>
+      <a href="./gallery.html">Galerie</a>
+      <a href="./kontakt.html">Kontakt</a>
     </div>
+    <div class="theme-toggle-container-desktop">
+      <label class="theme-toggle-desktop">
+        <input type="checkbox" id="themeToggle-desktop">
+        <span class="slider">
+          <img src="/2024-p2b-web-projekt-tomasecek/images/icons/sun.svg" alt="Light mode" class="icon sun" />
+          <img src="/2024-p2b-web-projekt-tomasecek/images/icons/moon-fill.svg" alt="Dark mode" class="icon moon" />
+        </span>
+      </label>
+    </div>
+    <div class="ham-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+</header>
+
+    <main class="main-grid">
+        <section class="hero">
+          <div class="hero-inner">
+            <h1 class="h1-hero">Digitální technologie, které posunou vpřed</h1>
+            <p class="p-hero">Transformujeme vaši firmu pomocí inovativních IT řešení a bezpečných webových systémů.</p>
+            <a href="kontakt.html" class="btn">Získejte nabídku</a>
+            <img class="hero-image" src="/2024-p2b-web-projekt-tomasecek/images/person.png" alt="Person Illustration" />
+          </div>
+        </section>
+
+        <section class="why-us-section">
+              <div class="about-image-desktop">
+                <img src="/2024-p2b-web-projekt-tomasecek/images/person_pc.png" alt="Osoba u počítače">
+              </div>
+          <div class="why-us-container">
+            <h2>Proč si vybrat právě nás?</h2>
+
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide benefit-card">
+                  <h3>
+                    <img src="/2024-p2b-web-projekt-tomasecek/images/icons/phone.png" alt="Podpora" />
+                    Podpora
+                  </h3>
+                  <p class="text-swiper">Jsme tu pro vás &ndash; spolehlivá, proaktivní a kdykoli je potřebujete.</p>
+                </div>
+                <div class="swiper-slide benefit-card">
+                  <h3>
+                    <img src="/2024-p2b-web-projekt-tomasecek/images/icons/lock.png" alt="Bezpečnost" />
+                    Bezpečnost
+                  </h3>
+                  <p class="text-swiper">Ochrana dat je u nás prioritou &ndash; od návrhu po nasazení.</p>
+                </div>
+                <div class="swiper-slide benefit-card">
+                  <h3>
+                    <img src="/2024-p2b-web-projekt-tomasecek/images/icons/lightbulb.png" alt="Inovace" />
+                    Inovace
+                  </h3>
+                  <p class="text-swiper">Moderní technologie a kreativní přístup k vývoji.</p>
+                </div>
+                <div class="swiper-slide benefit-card">
+                  <h3>
+                    <img src="/2024-p2b-web-projekt-tomasecek/images/icons/puzzle-piece.png" alt="Flexibilita" />
+                    Flexibilita
+                  </h3>
+                  <p class="text-swiper">Přizpůsobíme se vašim konkrétním potřebám a rozpočtu.</p>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </section>
+    <section class="services-about-section">
+        <section class="services">
+          <div class="container">
+            <h2 class="services-h2">Naše služby</h2>
+            <div class="service">
+              <img src="/2024-p2b-web-projekt-tomasecek/images/icons/sphere.png" alt="Webové aplikace">
+              <div>
+                <h3>Webové aplikace</h3>
+                <p class="service-text">Vývoj bezpečných webových řešení</p>
+              </div>
+            </div>
+            <div class="service">
+              <img src="/2024-p2b-web-projekt-tomasecek/images/icons/tools.png" alt="Správa sítí">
+              <div>
+                <h3>Správa sítí</h3>
+                <p class="service-text">Optimalizace cloudu pro podnikání</p>
+              </div>
+            </div>
+            <div class="service">
+              <img src="/2024-p2b-web-projekt-tomasecek/images/icons/cloud-upload.png" alt="Cloud & Hosting">
+              <div>
+                <h3>Cloud & Hosting</h3>
+                <p class="service-text">Kompletní návrh a správa firemních sítí</p>
+              </div>
+            </div>
+            <div class="service">
+              <img src="/2024-p2b-web-projekt-tomasecek/images/icons/bubble.png" alt="IT Poradenství">
+              <div>
+                <h3>IT Poradenství</h3>
+                <p class="service-text">Strategické a technologické konzultace</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="about-image">
+          <img src="/2024-p2b-web-projekt-tomasecek/images/person_pc.png" alt="Person Illustration" />
+        </section>
+
+        <section class="about">
+          <div class="about-inner">
+            <div class="about-text">
+              <h2>O nás</h2>
+              <p>
+                Jsme tým odborníků s vášní pro technologie.  
+                Stavíme spolehlivá a inovativní IT řešení, která pomáhají firmám růst a být konkurenceschopné.
+              </p>
+              <a href="o-nas.html" class="o-nas-btn">O nás</a>
+            </div>
+          </div>
+          </section>
+        </section>
+      </main>
+
+      <footer class="footer-text">
+        <p>&copy; 2025 TechNova. Všechna práva vyhrazena.</p>
+      </footer>
+    </div>
+  </div>
+
 </body>
 </html>
