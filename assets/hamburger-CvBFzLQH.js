@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",function(){for(const e of document.querySelectorAll(".header__hamburger"))e.addEventListener("click",function(){e.classList.toggle("header__hamburger--active"),document.querySelector(".hamburger__nav").classList.toggle("hamburger__nav--active"),document.querySelector(".body__main").classList.toggle("body__main--none")})});
