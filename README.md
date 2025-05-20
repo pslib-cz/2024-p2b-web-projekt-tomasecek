@@ -3,6 +3,8 @@
 
 Tento projekt vznikl v rámci školního předmětu **Webové aplikace (P2B)** na **PSLib Liberec**. Cílem bylo vytvořit responzivní vícestránkový web dle vlastního grafického návrhu.
 
+Nevím, proč se Míša zobrazuje jako "contributors", pomáhal jsem jí s GH pages a omylem sem pushnul její projekt ke mně na git a nevím jak ji odstranit, doufám, že to není problém.
+
 ## 🧩 Použité funkce/techniky/prvky
 
 - ✅ Návrh ve figmě
